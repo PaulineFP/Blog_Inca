@@ -3,5 +3,13 @@
 {% block title %}Admin{% endblock %}
 
 {% block body %}
-<h1>Administration</h1>
+
+    <h1>Administration</h1>
+
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success" role="alert">{{ message }}</div>
+    {% endfor %}
+
+
 {% endblock %}
+

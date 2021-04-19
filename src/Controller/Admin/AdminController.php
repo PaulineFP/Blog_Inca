@@ -20,6 +20,7 @@ class AdminController extends AbstractController
         ]);
     }
 
+
     /**
      * @Route("/admin/connexion", name="connexion")
      */
