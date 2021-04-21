@@ -3,10 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Articles;
-use App\Entity\Categories;
-use App\Form\CategoriesType;
 use App\Form\ItemsType;
-use App\Repository\CategoriesRepository;
 use App\Repository\ItemsRepository;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
