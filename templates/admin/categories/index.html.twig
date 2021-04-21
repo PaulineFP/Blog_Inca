@@ -29,9 +29,9 @@
                     <a href="{{ path("admin_categories_edit", {id: categorie.id}) }}" class="btn rounded-1 primary press">Modifier</a>
                 </td>
                 <td class="text-center">
-                    <a href="{{ path("admin_items_delete", {id: categorie.id}) }}" class="btn rounded-1 red press modal-trigger"
+                    <a href="{{ path("admin_items_delete", {id: categorie.id}) }}" class="btn rounded-1 red press modal-trigger modal-del"
                        data-target="modal-delete"
-                       data-id="{{ categorie.id }}" data-titre="{{ categorie.name }}">Supprimer</a>
+                       data-id="{{ categorie.id }}" data-titre="{{ categorie.name }}" data-parent="{{ categorie.parent }}">Supprimer</a>
                 </td>
             </tr>
         {% endfor %}
@@ -52,7 +52,7 @@
 
         <div class="modal-footer">
             <a href="" class="ml-auto btn red shadow-1 rounded-1 small">Valider</a>
-            <button data-target="modal-delete" class="ml-auto btn shadow-1 rounded-1 small primary modal-trigger">Close</button>
+            <button data-target="modal-delete" class="ml-auto btn shadow-1 rounded-1 small primary modal-trigger modal-del">Close</button>
         </div>
     </div>
 
@@ -65,22 +65,14 @@
     <script src="https://cdn.jsdelivr.net/npm/axentix@1.1.0/dist/js/axentix.min.js"></script>
     <script>
         window.onload = () => {
-            let activate = document.querySelectorAll("[type=checkbox]")
-            for (let bouton of activate) {
-                bouton.addEventListener("click", function () {
-                    let xmlhttp = new XMLHttpRequest;
-                    xmlhttp.open("get", `/admin/categories/activer/${this.dataset.id}`)
-                    xmlhttp.send()
-                })
 
-                let del = document.querySelectorAll(".modal-trigger")
+                let del = document.querySelectorAll(".modal-del")
                 for(let bouton of del) {
                     bouton.addEventListener("click", function () {
                         document.querySelector(".modal-footer a").href = `/admin/categories/supprimer/${this.dataset.id}`
                         document.querySelector(".modal-content").innerText = `Êtes-vous sûr(e) de vouloir supprimer la catégorie: "${this.dataset.titre}"?`
                     })
                 }
-            }
         }
 
     </script>
