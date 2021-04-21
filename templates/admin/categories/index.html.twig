@@ -29,7 +29,7 @@
                     <a href="{{ path("admin_categories_edit", {id: categorie.id}) }}" class="btn rounded-1 primary press">Modifier</a>
                 </td>
                 <td class="text-center">
-                    <a href="{{ path("admin_items_delete", {id: categorie.id}) }}" class="btn rounded-1 red press modal-trigger modal-del"
+                    <a href="{{ path("admin_categories_delete", {id: categorie.id}) }}" class="btn rounded-1 red press modal-trigger modal-del"
                        data-target="modal-delete"
                        data-id="{{ categorie.id }}" data-titre="{{ categorie.name }}" data-parent="{{ categorie.parent }}">Supprimer</a>
                 </td>

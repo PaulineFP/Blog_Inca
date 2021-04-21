@@ -2,7 +2,6 @@
 
 namespace App\Controller\Admin;
 
-use App\Entity\Articles;
 use App\Entity\Categories;
 use App\Form\CategoriesType;
 use App\Repository\CategoriesRepository;
@@ -84,7 +83,7 @@ class CategoriesController extends AbstractController
 
         $this->addFlash('message', 'Catégorie supprimé avec succès');
 
-        return $this->redirectToRoute('admin_categories_homee');
+        return $this->redirectToRoute('admin_categories_home');
     }
 
 
