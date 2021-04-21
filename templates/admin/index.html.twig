@@ -3,6 +3,7 @@
 {% block title %}Admin{% endblock %}
 
 {% block body %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.1.0/dist/css/axentix.min.css">
 
     <h1>Administration</h1>
 
@@ -10,6 +11,8 @@
         <div class="alert alert-success" role="alert">{{ message }}</div>
     {% endfor %}
 
+    <a href="{{ path("admin_categories_home")}}" class="btn rounded-1 primary press">Gérer les catégories</a>
+    <a href="{{ path("admin_items_home")}}" class="btn rounded-1 primary press">Gérer les articles</a>
 
 {% endblock %}
 
