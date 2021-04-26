@@ -5,6 +5,7 @@
   background: url("../images/home_header.jpg") no-repeat center;
   @import "variable";
 
+  //----Menu Burger---
   #menuToggle {
     display: block;
     position: absolute;
@@ -88,7 +89,6 @@
     }
   }
 
-
   #menu {
     position: absolute;
     width: 100vw;
@@ -109,6 +109,14 @@
       padding: 10px 0;
       font-size: 15px;
       margin: 0 2rem;
+    }
+  }
+
+  //--Socials items----
+  .social {
+    padding-top: 53vh;
+    a {
+      margin-top: 10px;
     }
   }
 }
