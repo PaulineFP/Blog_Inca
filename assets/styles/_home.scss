@@ -1,9 +1,8 @@
-
+@import "variable";
 .header {
   width: 100%;
   height: 100vh;
   background: url("../images/home_header.jpg") no-repeat center;
-  @import "variable";
 
   //----Menu Burger---
   #menuToggle {
@@ -118,5 +117,37 @@
     a {
       margin-top: 10px;
     }
+  }
+}
+
+//----Body content----
+
+div.text-home-content {
+  width: 50%;
+  .text-home {
+    width: 56vw;
+    margin: auto 0 auto 5em;
+    background-color: $BgText;
+    height: auto;
+    z-index: 0;
+    h2 {
+      margin-top: 1rem;
+      font-size: 36px;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    p {
+      margin: 1rem 20px;
+      text-align: justify;
+    }
+  }
+}
+
+div.lagun{
+  width: 50%;
+  img {
+   width: 100%;
+    height: 100vh;
   }
 }

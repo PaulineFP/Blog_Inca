@@ -49,7 +49,29 @@
             </a>
         </div>
     </header>
-    <h1>Bienvenue !</h1>
+    <div class="flex row justify-between">
+        <div class="text-home-content flex flex-col text-center">
+            <div class="text-home">
+                <h2>Les incas:</h2>
+                <p>
+                    Si les Incas sont mondialement connus et évoquent immanquablement l’image du Machu Picchu au Pérou et
+                    des temples du Soleil, les origines de ce peuple sont en revanche très floues. Et pour cause, la genèse
+                    des Incas tient très souvent de la légende.
+                </p>
+                <h5>Mais qui sont-ils véritablement?</h5>
+                <p>
+                    Nous connaissons donc les origines légendaires des fils du Soleil. Mais d’où viennent-ils en réalité?
+                    Si leurs origines paraissent aussi mystérieuses c’est que les Incas ont tout fait pour diviniser leurs
+                    origines. Pourtant, les Incas proviendraient non pas du Soleil ni d’une grotte mais de l’Altiplano. Plus
+                    précisément, les Incas étaient originaires de la région du lac Titicaca. En cela, la légende des Incas
+                    émergés du lac Titicaca est plutôt proche de la réalité.
+                </p>
+            </div>
+        </div>
+        <div class="lagun">
+            <img  src="{{ asset('build/images/childLagun.jpg') }}" alt="lac Titicaca">
+        </div>
+    </div>
 {% endblock %}
 
 {% include 'partials/_footer.html.twig' %}
