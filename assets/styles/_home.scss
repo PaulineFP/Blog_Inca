@@ -6,14 +6,15 @@ header {
 
   #menuToggle {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 50px;
-
     z-index: 1;
-
     -webkit-user-select: none;
     user-select: none;
+    background-color: $BgText;
+    padding: 6px;
+    border-radius: 10px;
 
     a {
       text-decoration: none;
@@ -40,8 +41,8 @@ header {
 
       &:checked ~ span {
         opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
-        background: $nav;
+        transform: rotate(45deg) translate(3px, 1px);
+        background: #fff;
       }
 
       &:checked ~ span:nth-last-child(3) {
@@ -50,7 +51,7 @@ header {
       }
 
       &:checked ~ span:nth-last-child(2) {
-        transform: rotate(-45deg) translate(0, -1px);
+        transform: rotate(-45deg) translate(0, 3px);
       }
 
       &:checked ~ ul {
@@ -60,12 +61,12 @@ header {
 
     span {
       display: block;
-      width: 33px;
-      height: 4px;
-      margin-bottom: 5px;
+      width: 23px;
+      height: 2px;
+      margin: 5px;
       position: relative;
 
-      background: #cdcdcd;
+      background: #fff;
       border-radius: 3px;
 
       z-index: 1;
@@ -90,10 +91,10 @@ header {
   #menu {
     position: absolute;
     width: 100vw;
-    margin-top: -70px;
+    margin-top: -65px;
     padding: 30px 50px 10px;
     right: -50px;
-    background: #ededed;
+    //background:  $text;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0 0;
@@ -109,9 +110,4 @@ header {
       margin: 0 2rem;
     }
   }
-}
-
-header .sticky {
-  background: rgba(234, 236, 234, .5);
-  transition: 0.3s ease;
 }
