@@ -5,7 +5,7 @@
   background: url("../images/history_header.jpg");
   background-size: cover;
   top: 0;
-  height: 700px;
+  height: 1000px;
   width: 100vw;
   z-index: -1;
   overflow-x: hidden;
@@ -74,6 +74,10 @@
     }
     .txt-r p {
       padding-left: 2em;
+    }
+    .txt-r .drop-cap::first-letter{
+        font-size: 45px;
+        font-family: Quando, serif;
     }
 
     .txt-l {
