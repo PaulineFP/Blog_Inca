@@ -1,0 +1,39 @@
+@import "variable";
+
+.blue-bg {
+  position: fixed;
+  background: url("../images/history_header.jpg");
+  background-size: cover;
+  top: 0;
+  height: 700px;
+  width: 100vw;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+.dark-bg {
+  position: absolute;
+  top: 19em;
+  background-color: $background;
+  margin: 200px 0;
+  width: 100vw;
+  height: 500vh;
+  transform: skewY(5deg);
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  top: 20em;
+  margin: 250px 10vw;
+  max-width: 100%;
+  height: auto;
+  background-color: $background;
+  p {
+    text-align: justify;
+  }
+}
+
+.shadow {
+  box-shadow: -2px -5px 5px 0px rgba(0, 0, 0, 0.3);
+}
