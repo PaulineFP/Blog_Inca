@@ -16,7 +16,7 @@ const allRonds = document.querySelectorAll('.rond');
                     reverse: false
                 })
                     .setTween(tween)
-                    .addIndicators()
+                    // .addIndicators()
                     .addTo(controller)
             }
 
