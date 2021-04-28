@@ -96,6 +96,48 @@
   }
 }
 
+@media screen and (max-width: 1170px) {
+
+  .content-history {
+    p {
+      font-size: 15px;
+    }
+
+    div.text-history-col {
+      .div-img {
+        .statOr {
+          width: 300px;
+          height: auto;
+        }
+
+        .war {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .content-history {
+    div {
+      width: 100%;
+    }
+    div.text-history-col {
+      flex-direction: column;
+      align-items: center;
+      div, .div-txt, .div-txt-map {
+        width: 100%;
+        justify-content: center;
+      }
+      .div-img {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
 //----Timeline------
 
 .timeline-title {
@@ -275,6 +317,7 @@
     .b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9 {
       left: 50%;
       height: 200px;
+
       p {
         font-size: 14px;
       }
