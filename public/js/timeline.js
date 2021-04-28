@@ -1,12 +1,4 @@
-// window.addEventListener("scroll", function timeline() {
-    //Navbar
-    // const header = document.querySelector(".nav");
-    // header.classList.toggle('sticky', window.scrollY > 80);
-//Timeline
-windows.onload = function () {
-
-
-    const allRonds = document.querySelectorAll('.rond');
+const allRonds = document.querySelectorAll('.rond');
     const allBoxes = document.querySelectorAll('.box');
 
     const controller = new ScrollMagic.Controller();
@@ -21,7 +13,7 @@ windows.onload = function () {
 
                 let scene = new ScrollMagic.Scene({
                     triggerElement: allRonds[i],
-                    reverse: true
+                    reverse: false
                 })
                     .setTween(tween)
                     .addIndicators()
@@ -29,5 +21,4 @@ windows.onload = function () {
             }
 
         }
-    })
-}
+    });
