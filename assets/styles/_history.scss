@@ -1,4 +1,5 @@
 @import "variable";
+@import "timeline";
 //-----Form page-----
 .blue-bg {
   position: fixed;
@@ -263,7 +264,7 @@
   }
 }
 
-//----Timeline------
+//----Timeline------> (import)
 
 .timeline-title {
   margin-top: 3em;
@@ -279,176 +280,9 @@
   }
 }
 
-.box-timeline {
-  width: 100%;
-  height: 2000px;
-  position: relative;
-  padding: 80px 0 250px 0;
-  margin-bottom: 100px;
-
-  .ligne {
-    height: 2000px;
-    width: 8px;
-    margin: 0 auto;
-    background: $title;
-  }
-
-  .rond {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: $title;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-
-    img {
-      width: 60px;
-    }
-  }
-
-  /* 1000 - 160 + 80 / 3 =~ 306 */
-  /*2000 -160 + 8/ = 240 =*/
-  .r1 {
-    top: 80px;
-  }
-
-  .r2 {
-    top: 320px;
-  }
-
-  .r3 {
-    top: 560px;
-  }
-
-  .r4 {
-    top: 800px;
-  }
-
-  .r5 {
-    top: 1040px;
-  }
-
-  .r6 {
-    top: 1280px;
-  }
-
-  .r7 {
-    top: 1520px;
-  }
-
-  .r8 {
-    top: 1760px;
-  }
-
-  .r9 {
-    top: 2000px;
-  }
-
-  .box {
-    color: #333;
-    width: 500px;
-    min-height: 200px;
-    padding: 20px;
-    border-radius: 3px;
-    height: auto;
-    background: $BgArt;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-
-    p {
-      line-height: 20px;
-      font-size: 18px;
-      margin: 10px 0 20px 0;
-      color: black;
-    }
-
-    h6 {
-      color: black;
-      font-size: 24px;
-    }
-
-    .btn {
-      display: block;
-      background: $title;
-      padding: 10px;
-      width: 120px;
-      text-align: center;
-      color: #f1f1f1;
-      text-decoration: none;
-      border-radius: 3px;
-      margin-top: 10px;
-    }
-  }
-
-  .b1 {
-    top: 80px;
-    left: calc(50% - 315px);
-  }
-
-  .b2 {
-    top: 320px;
-    left: calc(50% + 315px);
-  }
-
-  .b3 {
-    top: 560px;
-    left: calc(50% - 315px);
-  }
-
-  .b4 {
-    top: 800px;
-    left: calc(50% + 315px);
-  }
-
-  .b5 {
-    top: 1040px;
-    left: calc(50% - 315px);
-  }
-
-  .b6 {
-    top: 1280px;
-    left: calc(50% + 315px);
-  }
-
-  .b7 {
-    top: 1520px;;
-    left: calc(50% - 315px);
-  }
-
-  .b8 {
-    top: 1760px;
-    left: calc(50% + 315px);
-  }
-
-  .b9 {
-    top: 2000px;
-    left: calc(50% - 315px);
-  }
-}
-
 @media screen and (max-width: 1170px) {
   .timeline-title p {
     font-size: 20px;
-  }
-  .ligne {
-    position: relative;
-  }
-  .box-timeline {
-    .b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9 {
-      left: 50%;
-      height: 200px;
-
-      p {
-        font-size: 14px;
-      }
-    }
   }
 }
 
@@ -458,35 +292,5 @@
   }
   .timeline-title p {
     font-size: 18px;
-  }
-  .box-timeline {
-    .box {
-      width: 400px;
-      height: 220px;
-
-      h6 {
-        font-size: 18px;
-      }
-
-      p {
-        font-size: 12px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .box-timeline .box {
-    width: 300px;
-    height: 200px;
-
-    h6 {
-      font-size: 12px;
-    }
-
-    p {
-      font-size: 12px;
-      line-height: inherit;
-    }
   }
 }
