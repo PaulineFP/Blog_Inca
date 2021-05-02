@@ -4,14 +4,14 @@
   display: block;
   position: fixed;
   top: 50vh;
-  left: 50px;
+  left: 10px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.55);
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   a {
     text-decoration: none;
@@ -26,10 +26,8 @@
   input {
     display: block;
     width: 40px;
-    height: 32px;
+    height: 40px;
     position: absolute;
-    top: -7px;
-    left: -5px;
     cursor: pointer;
     opacity: 0; /* hide this */
     z-index: 2; /* and place it over the hamburger */
@@ -40,7 +38,7 @@
   }
   span.vertical{
     transform: rotate(90deg) translate(-2px, -1px);
-    margin-top: 1.5rem;
+    margin-top: 1.4rem;
   }
   span.horizontal{
     transform: rotate(0deg) translate(1.5px, -10px);
@@ -49,7 +47,7 @@
     display: block;
     width: 23px;
     height: 4px;
-    margin: 4px 10px;
+    margin: 4px 7px;
     position: relative;
     background: #cdcdcd;
     border-radius: 3px;
