@@ -39,6 +39,7 @@
 
   div.full-img img {
     width: 100vw;
+    max-height: 900px;
   }
 
   .intro-cult {
@@ -173,6 +174,7 @@
       width: 50vw;
       height: 500px;
     }
+
     .title-archi {
       margin: 1em;
     }
@@ -185,9 +187,204 @@
   #videos {
     background-color: rgba(0, 0, 0, 0.86);
     height: 500px;
+
     h2 {
       margin: 0;
       padding: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .cult-content {
+    div.full-img img {
+      max-height: 700px;
+    }
+
+    #social {
+      .social-inca {
+        flex-direction: column;
+
+        .txt {
+          order: 2;
+        }
+
+        .inca {
+          justify-content: center;
+
+          img {
+            width: 40vw;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    #life {
+      h2 {
+        margin: 1em;
+      }
+
+      .life-alim {
+        flex-direction: column;
+
+        .txt {
+          order: 2;
+        }
+
+        .symbole {
+          justify-content: center;
+        }
+      }
+
+      .quipus img {
+        height: auto;
+      }
+
+      .temps {
+        flex-direction: column;
+        align-items: center;
+
+        .txt {
+          order: 2;
+        }
+      }
+
+      .vetements {
+        flex-direction: column;
+        justify-content: center;
+
+        .tissus img {
+          width: 100%;
+          height: 400px;
+        }
+
+        .txt {
+          order: 2;
+        }
+      }
+    }
+
+    #religion {
+      .culte {
+        flex-direction: column;
+        align-items: center;
+
+        .ancetre {
+          order: 1;
+        }
+      }
+
+      .sacrifice {
+        flex-direction: column;
+        align-items: center;
+
+        .momie img {
+          width: 100%;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .cult-content {
+    .intro-cult {
+      flex-direction: column;
+      align-items: center;
+
+      div.txt p {
+        margin: 1em 0;
+        order: 1;
+        font-size: 18px;
+      }
+
+      .img {
+        order: 2;
+      }
+    }
+
+    #social {
+      .place-femmes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    #agriculture {
+      .p-terraces {
+        flex-direction: column;
+        align-items: center;
+
+        .terraces {
+          order: 1;
+
+          img {
+            width: 50vw;
+          }
+        }
+      }
+    }
+
+    #life {
+      .deform {
+        flex-direction: column;
+        align-items: center;
+
+        .txt {
+          order: 1;
+        }
+      }
+
+      .ecriture {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .mess {
+        flex-direction: column;
+        align-items: center;
+        .txt {
+          order: 2;
+        }
+        .messager img {
+          width: 40vw;
+        }
+      }
+      .educ {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    #religion{
+      .deces {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1em;
+        p {
+          margin: 1em 2em 1em 0;
+        }
+      }
+    }
+
+    #architecture{
+      .mur-p {
+        flex-direction: column;
+        align-items: center;
+        .mur img {
+          height: auto;
+        }
+      }
+
+      .fenetre-p {
+        flex-direction: column;
+        align-items: center;
+        .txt {
+          order: 1;
+        }
+      }
     }
   }
 }
