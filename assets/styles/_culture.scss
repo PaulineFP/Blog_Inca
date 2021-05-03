@@ -4,15 +4,190 @@
   width: 100vw;
 }
 
-.intro-cult {
-  width: 90%;
-  margin: 3em auto;
 
-  .txt {
-    width: 80%;
-    margin: auto;
-    p{
+.cult-content {
+
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 42px;
+    margin: 2em;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 32px;
+    margin: 1em 2em;
+  }
+
+  h6 {
+    font-size: 24px;
+    font-weight: initial;
+    margin: 1em 2em;
+  }
+
+  p {
+    margin: 1em 3em;
+    text-align: justify;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  div.full-img img {
+    width: 100vw;
+  }
+
+  .intro-cult {
+    width: 90%;
+    margin: 3em auto;
+
+    .txt {
+      width: 80%;
+      margin: auto;
+
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+
+  #social {
+    div.full-img img {
+      height: 900px;
+    }
+
+    .inca img {
+      width: 50vw;
+      height: 900px;
+    }
+
+    .femmes img {
+      width: 50vw;
+    }
+  }
+
+  #agriculture {
+    .terraces img {
+      margin-right: 4em;
+      width: 30vw;
+    }
+
+    .intro {
+      text-align: center !important;
       font-size: 22px;
+    }
+
+    .qollqa img {
+      margin-top: 2em;
+    }
+  }
+
+  #life {
+    .full-img img {
+      margin: 2em 0;
+    }
+
+    .symbole img {
+      width: 35vw;
+      margin-right: 1em;
+    }
+
+    .crane img {
+      width: 60%;
+    }
+
+    .crane-d img {
+      margin-right: 3em;
+      width: 45vw;
+      height: 250px;
+    }
+
+    .quipus img {
+      margin-left: 3em;
+      width: 45vw;
+      height: 600px;
+    }
+
+    .messager {
+      margin-right: 3em;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .symbole3 {
+      margin-left: 1em;
+
+      img {
+        width: 35vw;
+      }
+    }
+
+    .horloge img {
+      width: 50vw;
+    }
+
+    .tissus img {
+      width: 49vw;
+      height: 700px;
+    }
+  }
+
+  #religion {
+    .religion img {
+      height: 800px;
+    }
+
+    .ancetre {
+      margin-right: 3em;
+
+      img {
+        height: 400px;
+      }
+    }
+
+    .inti img {
+      width: 20vw;
+    }
+
+    .pachacamac img {
+      height: 900px;
+    }
+
+    .momie img {
+      width: 45vw;
+    }
+
+    .squelette img {
+      height: 450px;
+    }
+  }
+
+  #architecture {
+    .mur img {
+      width: 50vw;
+      height: 500px;
+    }
+    .title-archi {
+      margin: 1em;
+    }
+
+    .fenetre img {
+      width: 49vw;
+    }
+  }
+
+  #videos {
+    background-color: rgba(0, 0, 0, 0.86);
+    height: 500px;
+    h2 {
+      margin: 0;
+      padding: 1em;
     }
   }
 }

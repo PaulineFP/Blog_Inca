@@ -7,7 +7,7 @@
         <source src="{{ asset('videos/video_header.mp4') }}" type="video/mp4">
     </video>
 
-    <div>
+    <div class="cult-content">
         <h1 class="mt-16">Culture Inca</h1>
         <div class=" intro-cult flex items-center " >
             <div >
@@ -32,23 +32,23 @@
 
             <ul id="summary">
                 <a href="#social"><li>Classes sociales</li></a>
-                <a href="#agriculutre"><li>Agriculture</li></a>
+                <a href="#agriculture"><li>Agriculture</li></a>
                 <a href="#life"><li>Mode de vie</li></a>
                 <a href="#religion"><li>Religion</li></a>
-                <a href="#agriculutre"><li>Architectures et scultures</li></a>
+                <a href="#architecture"><li>Architectures et scultures</li></a>
                 <a href="#videos"><li>Vidéos</li></a>
             </ul>
         </div>
 
         <div id="social">
-            <div>
-                <img src="" alt="header classes sociales">
+            <div class="full-img">
+                <img  src="{{ asset('build/images/au-pays-de-linca.jpg') }}" alt="header classes sociales">
             </div>
             <div>
                 <h2>
                     Classes Sociales:
                 </h2>
-                <p>
+                <p class="text-justify">
                     La hiérarchie dans l'empire inca reprend l'organisation traditionnelle des communautés andines.
                     L'Inca est à la fois chef de son clan et souverain de tout l'empire. L'organisation communautaire
                     est à la base de la structure de l'empire. Dans de nombreux cas, l'Inca conquérant veille à ne pas
@@ -57,17 +57,17 @@
                     et les instruire dans la religion officielle. Ces autorités locales étaient donc encadrées et
                     rendaient comptes à des supérieurs hiérarchiques qui tous étaient membres du clan Inca.
                 </p>
-                <p>
-                    Cette société était donc fondée sur un système de castes et on ne pouvait que très difficilement et
-                    exceptionnellement changer de rang. Un individu de la classe laborieuse pouvait accéder à la classe
-                    dirigeante à la suite d'un exploit militaire ou grâce à quelque autre mérite. Il arrivait, dans un
-                    but politique, que des dirigeants coopératifs de peuples vaincus obtiennent des postes à
-                    responsabilités, souvent celui de Kurakas.
-                </p>
             </div>
 
-            <div>
-                <div>
+            <div class="flex">
+                <div class="flex flex-col justify-center">
+                    <p class="text-justify">
+                        Cette société était donc fondée sur un système de castes et on ne pouvait que très difficilement et
+                        exceptionnellement changer de rang. Un individu de la classe laborieuse pouvait accéder à la classe
+                        dirigeante à la suite d'un exploit militaire ou grâce à quelque autre mérite. Il arrivait, dans un
+                        but politique, que des dirigeants coopératifs de peuples vaincus obtiennent des postes à
+                        responsabilités, souvent celui de Kurakas.
+                    </p>
                     <p>
                         Le groupe social de base est formé par la famille constituée des parents et des enfants
                         célibataires. L'homme travaille aux champs, et pratique éventuellement de l'artisanat, tandis
@@ -107,16 +107,16 @@
                         inca.
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="inca">
+                <div class="inca">
+                    <img src="{{ asset('build/images/inca.jpg') }}" alt="inca">
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <img src="" alt="femmes inca">
+            <div class="flex">
+                <div class="femmes">
+                    <img src="{{ asset('build/images/peru-femmes.jpg') }}" alt="femmes inca">
                 </div>
-                <div>
+                <div class="flex flex-col justify-center">
                     <h3>
                         La place des femmes
                     </h3>
@@ -136,15 +136,15 @@
             </div>
         </div>
 
-        <div id="agriculutre">
-            <div>
-                <img src="" alt="moray-maras">
+        <div id="agriculture">
+            <div class="full-img">
+                <img src="{{ asset('build/images/moray-maras.jpg') }}" alt="moray-maras">
             </div>
             <div>
                 <h2>
                     Agriculture:
                 </h2>
-                <p>
+                <p class="intro mt-10">
                     Peuple du soleil, les Incas ont aussi été précurseurs de nombreuses techniques agricoles.
                 </p>
                 <p>
@@ -157,9 +157,9 @@
                     a été développé pour s'assurer contre la sécheresse et des catastrophes et des denrées alimentaires
                     ont été souvent donnés comme cadeaux par les dirigeants qui cherchent à se faire populaire.
                 </p>
-                <h6>
+                <h3>
                     Organisation et méthodes:
-                </h6>
+                </h3>
                 <p>
                     Un niveau microéconomique chaque unité familiale a produit sa propre nourriture. Unités familiales
                     faisaient partie d'un plus large groupe parental ou l' ayllu qui collectivement la propriété des
@@ -181,7 +181,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="flex items-center">
                 <div>
                     <p>
                         Les terres ont été travaillées en utilisant des outils simples comme une houe, brise Motte et
@@ -195,8 +195,8 @@
 
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="terrasse-agricoles">
+                <div class="terraces">
+                    <img src="{{ asset('build/images/anciennes-ruines-terrasses-agricoles-incas.jpg') }}" alt="terrasse-agricoles">
                 </div>
             </div>
 
@@ -225,13 +225,13 @@
                 </p>
             </div>
 
-            <div>
-                <img src="" alt="qollqa">
+            <div class="full-img qollqa">
+                <img src="{{ asset('build/images/qollqa.jpg') }}" alt="qollqa">
             </div>
             <div>
-                <h6>
+                <h3 class="text-center">
                     Conservation des aliments:
-                </h6>
+                </h3>
                 <p>
                     Les denrées alimentaires (et autres marchandises) étaient stockés dans des entrepôts (qollqa) qui
                     ont été construits dans les dizaines de milliers dans l'empire, généralement disposées en rangées et
@@ -252,16 +252,16 @@
         </div>
 
         <div id="life">
-            <div>
-                <img src="" alt="inca header">
+            <div class="full-img">
+                <img src="{{ asset('build/images/incas-header.PNG') }}" alt="inca header">
             </div>
             <div>
                 <h2>
                     Mode de vie:
                 </h2>
             </div>
-            <div>
-                <div>
+            <div class="flex">
+                <div class="flex flex-col items-center">
                     <h3>Alimentation:</h3>
                     <p>
                         Les paysans incas, comme leurs descendants péruviens actuels, prennent deux repas par jour (vers
@@ -293,15 +293,15 @@
                         le père Assali s’il n’a pas perdu sa main verte !
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="symbole inca">
+                <div class="symbole">
+                    <img src="{{ asset('build/images/symbole2.png') }}" alt="symbole inca">
                 </div>
             </div>
-            <div>
-                <img src="" alt="trépanation">
+            <div class="flex justify-center mt-16 mb-16 crane">
+                <img src="{{ asset('build/images/cranes.PNG') }}" alt="trépanation">
             </div>
             <div>
-                <P>Trépanation:</P>
+                <h6>Trépanation:</h6>
                 <p>
                     Les Incas ont, non seulement, laissé un précieux héitage artistique, architectural et culturel, mais
                     aussi une contribution exceptionnelle à la médecine, il est aujourd’hui avéré que la civilisation
@@ -354,13 +354,13 @@
                     années après l’intervention.
                 </p>
             </div>
-            <div>
-                <img src="" alt="déformation crânienne">
+            <div class="flex justify-center mt-16 mb-16 crane">
+                <img src="{{ asset('build/images/deformation.jpg') }}" alt="déformation crânienne">
             </div>
             <div>
-                <p>
+                <h6>
                     Déformation crânienne:
-                </p>
+                </h6>
                 <p>
                     La déformation artificielle du crâne des nouveau-nés est une antique tradition universelle. De
                     l’Europe aux Amériques en passant par l’Afrique, l’Asie, l’Océanie, aucune région n’échappa au
@@ -375,7 +375,7 @@
                 <p>
                     Déformer les crânes pour fixer l’âme au corps:
                 </p>
-                <p>
+                <p class="bold">
                     Mais pourquoi les Incas déformaient-ils les crânes ?
                 </p>
                 <p>
@@ -405,7 +405,7 @@
                     crâniennes, s’avère indispensable et impérieuse. Déformer la tête c’est durcir et fermer le corps,
                     solidifier, remettre en ordre au moins une de ses ouvertures.
                 </p>
-                <p>
+                <p class="bold">
                     Comment faisait-on chez les Incas ?
                 </p>
                 <p>
@@ -417,8 +417,8 @@
                 </p>
             </div>
 
-            <div>
-                <div>
+            <div class="flex mb-16">
+                <div class="flex flex-col justify-center">
                     <p>
                         Les têtes étaient déformées selon plusieurs méthodes, l’aplatissement affectant soit le haut du
                         crâne, soit les côtés. Les appareils déformateurs mis en œuvre sont de trois types : le berceau
@@ -430,16 +430,16 @@
                         serré. C’est le type « annulaire ou circulaire ».
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="schema déformation de crânes">
+                <div class="crane-d">
+                    <img src="{{ asset('build/images/deformationcrane.PNG') }}" alt="schema déformation de crânes">
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <img src="" alt="quipus">
+            <div class="flex">
+                <div class="quipus">
+                    <img src="{{ asset('build/images/quipus.jpg') }}" alt="quipus">
                 </div>
-                <div>
+                <div class="flex flex-col justify-center">
                     <h3>
                         l'écriture:
                     </h3>
@@ -465,7 +465,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="flex">
                 <div>
                     <p>
                         Les Incas envoyaient ces quipus ainsi que d’autres messages (qu’ils se transmettaient de manière
@@ -478,15 +478,15 @@
                         Cusco.
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="messager inca">
+                <div class="messager">
+                    <img src="{{ asset('build/images/incas-chasquis.jpg') }}" alt="messager inca">
                 </div>
             </div>
-            <div>
-                <img src="" alt="fille header">
+            <div class="full-img">
+                <img src="{{ asset('build/images/fille.jpg') }}" alt="fille header">
             </div>
             <div>
-                <h3>L'éducation</h3>
+                <h3 class="text-center">L'éducation</h3>
                 <p>
                     Toutes les informations sur leur éducation proviennent des chroniques écrites par les Espagnols lors
                     de la conquête et de la colonie. De même, les informations ont été transmises oralement. Grâce à
@@ -514,12 +514,12 @@
                     permettant de prolonger les érections ou de se masturber.
                 </p>
             </div>
-            <div>
-                <div>
-                    <img src="" alt="symbole dieu inca">
+            <div class="flex">
+                <div class="symbole3">
+                    <img src="{{ asset('build/images/symbole3.png') }}" alt="symbole dieu inca">
                 </div>
-                <div>
-                    <p>
+                <div class="flex flex-col justify-center">
+                    <p class="bold">
                         L’éducation des hommes:
                     </p>
                     <p>
@@ -535,7 +535,7 @@
                         En outre, ils ont également reçu des formations physiques et des techniques militaires tout au
                         long du temps.
                     </p>
-                    <p>L’éducation des femmes:</p>
+                    <p class="bold">L’éducation des femmes:</p>
                     <p>
                         Les écoles pour jeunes filles s’appelaient ‘Acllahuasi‘ (Maison de l’élu).
                         L’éducation des femmes était très différente de celle des garçons.
@@ -557,11 +557,11 @@
             </div>
 
             <div>
-                <img src="" alt="paysage matchupichu">
+                <img src="{{ asset ('build/images/machupichu-paysage.jpg') }}" alt="paysage matchupichu">
             </div>
-            <div>
-                <div>
-                    <h3>
+            <div class="flex">
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-center">
                         Notion de temps:
                     </h3>
                     <p>
@@ -578,16 +578,16 @@
                         jours.
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="horloge solaire">
+                <div class="horloge">
+                    <img src="{{ asset ('build/images/los-incas.jpg') }}" alt="horloge solaire">
                 </div>
             </div>
-            <div>
-                <div>
-                    <img src="" alt="tissus">
+            <div class="flex">
+                <div class="tissus">
+                    <img src="{{ asset ('build/images/tissus.jpg') }}" alt="tissus">
                 </div>
-                <div>
-                    <h3>Vetements:</h3>
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-center">Vetements:</h3>
                     <p>
                         Les paysans incas portent tous des vêtements assez semblables. Il s'agit, pour les hommes, d'un
                         pagne et d'une tunique sans manches auxquels on ajoute une cape lorsque les conditions
@@ -617,8 +617,8 @@
                     </p>
                 </div>
             </div>
-            <div>
-                <h3>
+            <div class="mb-16">
+                <h3 class="text-center">
                     Jeux et divertissements:
                 </h3>
                 <p>
@@ -636,8 +636,8 @@
             </div>
         </div>
         <div id="religion">
-            <div>
-                <img src="" alt="religion header">
+            <div class="full-img religion">
+                <img src="{{ asset ('build/images/religion.jpeg') }}" alt="religion header">
             </div>
             <div>
                 <h2>Religion</h2>
@@ -655,8 +655,8 @@
                 </p>
             </div>
 
-            <div>
-                <div>
+            <div class="flex">
+                <div class="flex flex-col justify-center">
                     <h3>
                         Le culte des ancètres:
                     </h3>
@@ -671,8 +671,8 @@
                         des montagnes. Des offrandes leur sont offertes et elles sont promenées lors des cérémonies
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="culte des ancètres">
+                <div class="ancetre">
+                    <img src="{{ asset ('build/images/culte-encetres.jpg') }}" alt="culte des ancètres">
                 </div>
             </div>
 
@@ -691,11 +691,11 @@
                 </p>
             </div>
 
-            <div>
-                <div>
-                    <img src="" alt="Init">
+            <div class="flex">
+                <div class="inti">
+                    <img src="{{ asset ('build/images/inti.png') }}" alt="Init">
                 </div>
-                <div>
+                <div class="flex flex-col justify-center">
                     <h3>Culte du soleil et des astres:</h3>
                     <p>
                         Le fondement commun de la religion inca est une cosmovision basée sur les astres. L’identité du
@@ -714,7 +714,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="flex mb-16">
                 <div>
                     <h3>
                         Adoration d’autres divinité:
@@ -740,17 +740,17 @@
                         connaît son apogée.
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="Inti Illapa">
+                <div class="inti mr-9">
+                    <img src="{{ asset ('build/images/symbole4.png') }}" alt="Inti Illapa">
                 </div>
             </div>
 
-            <div>
-                <img src="" alt="Pachacamac">
+            <div class="full-img pachacamac">
+                <img src="{{ asset ('build/images/pachacamac.jpg') }}" alt="Pachacamac">
             </div>
 
             <div>
-                <h3>
+                <h3 class="text-center">
                     Divination:
                 </h3>
                 <p>
@@ -780,8 +780,8 @@
                 </p>
             </div>
 
-            <div>
-                <div>
+            <div class="flex">
+                <div class="flex flex-col justify-center">
                     <h6>
                         Les sacirfices humains:
                     </h6>
@@ -801,8 +801,8 @@
                         d’alcool avant leur mort.
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="momie du Llullaillaco">
+                <div class="mr-13 momie">
+                    <img src="{{ asset ('build/images/la-momie-fille-inca.jpg') }}" alt="momie du Llullaillaco">
                 </div>
             </div>
 
@@ -816,9 +816,9 @@
                     choisies, une partie était destinée à être sacrifiée.
                 </p>
             </div>
-            <div>
-                <div>
-                    <img src="" alt="squelette">
+            <div class="flex ml-13">
+                <div class="squelette">
+                    <img src="{{ asset ('build/images/incas-2000.jpg') }}" alt="squelette">
                 </div>
                 <div>
                     <p>
@@ -847,11 +847,11 @@
                 </div>
             </div>
 
-            <div>
-                <img src="" alt="temple du soleil">
+            <div class="full-img">
+                <img src="{{ asset ('build/images/temple-du-soleil.jpg') }}" alt="temple du soleil">
             </div>
-            <div>
-                <h3>
+            <div class="mb-16">
+                <h3 class="text-center">
                     Temple du soleil:
                 </h3>
                 <p>
@@ -865,12 +865,12 @@
             </div>
         </div>
         <div id="architecture">
-            <div>
-                <div>
-                    <img src="" alt="mur">
+            <div class="flex">
+                <div class="mur">
+                    <img src="{{ asset ('build/images/peru-mur.jpg') }}" alt="mur">
                 </div>
-                <div>
-                    <h2>
+                <div class="flex flex-col justify-center">
+                    <h2 class="title-archi">
                         Arcitectures et sculture:
                     </h2>
                     <p>
@@ -885,8 +885,8 @@
                 </div>
             </div>
 
-            <div>
-                <div>
+            <div class="flex">
+                <div class="flex items-center">
                     <p>
                         Les Incas utilisaient divers styles architecturaux, mais le plus connu est sans conteste celui
                         utilisé par exemple pour le temple du Soleil de Cuzco ainsi que beaucoup d'autres bâtiments
@@ -897,8 +897,8 @@
                         forteresse de Cuzco, ou encore les impressionnantes ruines d'Ollantaytambo.
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="architecture">
+                <div class="fenetre">
+                    <img src="{{ asset ('build/images/2372.jpg') }}" alt="architecture">
                 </div>
             </div>
         </div>
