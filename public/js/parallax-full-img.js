@@ -1,4 +1,5 @@
 var image = document.getElementsByClassName('parallax-full');
 new simpleParallax(image, {
-    scale: 1.5
+    delay: .6,
+    transition: 'cubic-bezier(0,0,0,1)'
 });
