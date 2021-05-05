@@ -1,11 +1,14 @@
-{% extends 'base.html.twig' %}
+{% extends 'admin.html.twig' %}
 
 {% block title %}Ajouter une categorie{% endblock %}
 
 {% block body %}
-    <h1>Ajouter une categorie:</h1>
 
-    {{form_start(form)}}
+        <h1>Ajouter une categorie:</h1>
 
-    {{form_end(form)}}
+        <div class="form-ad">
+                {{ form_start(form) }}
+                {{ form_end(form) }}
+        </div>
+
 {% endblock %}

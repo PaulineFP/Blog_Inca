@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.form-ad {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=_admin.css.map */
