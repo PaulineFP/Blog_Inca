@@ -1,9 +1,13 @@
 @import "btnSummary";
 
-.video_header {
-  width: 100vw;
-}
+//.video_header {
+//  width: 100vw;
+//}
 
+.cult-header {
+  width: 100vw;
+  height: 60vh;
+}
 
 .cult-content {
 
@@ -29,8 +33,31 @@
   }
 
   p {
-    margin: 1em 3em;
+    margin: 2em 0;
     text-align: justify;
+  }
+
+  .h7 {
+    margin: 5em 0;
+    text-align: center;
+  }
+
+  .p-r {
+    margin-left: 3em;
+  }
+
+  .italic {
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  .marge{
+    margin: 7em 0;
+  }
+
+  .p-l {
+    margin-right: 3em;
   }
 
   .bold {
@@ -38,21 +65,16 @@
   }
 
   div.full-img img {
-    width: 100vw;
-    max-height: 900px;
+    width: 100%;
+    max-height: 65vh;
+    object-fit: contain;
   }
 
   .intro-cult {
-    width: 90%;
     margin: 3em auto;
 
-    .txt {
-      width: 80%;
-      margin: auto;
-
-      p {
-        font-size: 22px;
-      }
+    .txt p {
+      font-size: 22px;
     }
   }
 
@@ -62,18 +84,16 @@
     }
 
     .inca img {
-      width: 50vw;
-      height: 900px;
+      width: 25vw;
     }
 
     .femmes img {
-      width: 50vw;
+      width: 35vw;
     }
   }
 
   #agriculture {
     .terraces img {
-      margin-right: 4em;
       width: 30vw;
     }
 
@@ -94,32 +114,27 @@
 
     .symbole img {
       width: 35vw;
-      margin-right: 1em;
     }
 
     .crane img {
       width: 60%;
+      margin: 2em;
     }
 
     .crane-d img {
-      margin-right: 3em;
-      width: 45vw;
+      width: 25vw;
       height: 250px;
     }
 
     .quipus img {
-      margin-left: 3em;
-      width: 45vw;
+      width: 25vw;
       height: 600px;
     }
 
-    .messager {
-      margin-right: 3em;
-
-      img {
-        width: 100%;
-      }
+    .messager img {
+      width: 15vw;
     }
+
 
     .symbole3 {
       margin-left: 1em;
@@ -130,26 +145,17 @@
     }
 
     .horloge img {
-      width: 50vw;
+      width: 35vw;
     }
 
     .tissus img {
-      width: 49vw;
-      height: 700px;
+      width: 25vw;
     }
   }
 
   #religion {
-    .religion img {
-      height: 800px;
-    }
-
-    .ancetre {
-      margin-right: 3em;
-
-      img {
-        height: 400px;
-      }
+    .ancetre img {
+      height: 400px;
     }
 
     .inti img {
@@ -161,7 +167,7 @@
     }
 
     .momie img {
-      width: 45vw;
+      width: 35vw;
     }
 
     .squelette img {
@@ -171,7 +177,7 @@
 
   #architecture {
     .mur img {
-      width: 50vw;
+      width: 40vw;
       height: 500px;
     }
 
@@ -180,7 +186,7 @@
     }
 
     .fenetre img {
-      width: 49vw;
+      width: 40vw;
     }
   }
 
@@ -289,6 +295,7 @@
           }
         }
       }
+
       .pachacamac img {
         height: auto;
       }

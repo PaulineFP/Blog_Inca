@@ -33,6 +33,22 @@ class HomeController extends AbstractController
     }
 
     /**
+     * @Route("/culture/religion", name="culture-religion")
+     */
+    public function pagetwo(): Response
+    {
+        return $this->render('home/religion.html.twig');
+    }
+
+    /**
+     * @Route("/culture/autre", name="culture-other")
+     */
+    public function pagethree(): Response
+    {
+        return $this->render('home/other.html.twig');
+    }
+
+    /**
      * @Route("/legends", name="legends")
      */
     public function legends(): Response

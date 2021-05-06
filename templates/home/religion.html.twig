@@ -1,0 +1,334 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Culture-religion{% endblock %}
+
+{% block body %}
+
+    <img class=" cult-header " src="{{ asset ('build/images/religion.jpeg') }}" alt="religion header">
+
+
+    <div class="contenaire">
+        <div class="cult-content">
+
+            <div id="btn-summary">
+
+                <input type="checkbox" />
+
+                <span class="vertical"></span>
+                <span class="horizontal"></span>
+
+                <ul id="summary">
+                    <a href="{{ path('culture') }}#social"><li>Classes sociales</li></a>
+                    <a href="{{ path('culture-other') }}#agriculture"><li>Agriculture</li></a>
+                    <a href="{{ path('culture') }}#life"><li>Mode de vie</li></a>
+                    <a href="{{ path('culture-religion') }}#religion"><li>Religion</li></a>
+                    <a href="{{ path('culture-other') }}#architecture"><li>Architectures et scultures</li></a>
+                    <a href="#videos"><li>Vidéos</li></a>
+                </ul>
+            </div>
+
+            <div id="religion">
+                <div class="mb-16">
+                    <h2 class="gs_reveal">Religion</h2>
+                    <p class="gs_reveal">La colonisation espagnole et l'évangélisation catholique ont rapidement fait
+                        décliner les religions
+                        des Incas. Si certaines formes subsistent aujourd'hui notamment sous forme d'animisme, la
+                        plupart
+                        des informations que l'on possède à ce propos sont issues de témoignages indirects, plus ou
+                        moins
+                        biaisés. On possède par ailleurs très peu d'informations sur le système religieux en-dehors des
+                        Andes, les populations ayant rapidement décliné avant même l'évangélisation.
+                    </p>
+                    <p class="gs_reveal">
+                        En plus de la volonté d'imposer une religion d'état, l'héritage des civilisations précédentes et
+                        une
+                        longue histoire d'échanges et d'influence permettent aux populations andines une certaine unité
+                        religieuse. Certaines divinités sont ainsi communes à différents peuples, mais portent des noms
+                        différents
+                    </p>
+                </div>
+
+                <div class="flex culte mb-16">
+                    <div class="flex flex-col justify-center p-l">
+                        <h3 class="gs_reveal">
+                            Le culte des ancètres:
+                        </h3>
+                        <p class="gs_reveal">
+                            Les ancêtres décédés occupent une place particulière dans les religions andines. Le
+                            fondateur
+                            d'un lignage est ainsi révéré, notamment pour avoir donné à son ayllu des terres. Ces
+                            fondateurs
+                            sont souvent semi-légendaires, ayant accompli des actes surnaturels et n'ayant pas de
+                            géniteurs
+                            humains. C'est ainsi le cas pour ceux de la tribu inca.
+                        </p>
+                        <p class="gs_reveal">
+                            Les corps des défunts sont conservés, non pas embaumés mais laissés à se dessécher au vent
+                            sec
+                            des montagnes. Des offrandes leur sont offertes et elles sont promenées lors des cérémonies
+                        </p>
+                    </div>
+                    <div class="ancetre  flex items-center">
+                        <img src="{{ asset ('build/images/culte-encetres.jpg') }}" alt="culte des ancètres">
+                    </div>
+                </div>
+
+                <div class="mb-16">
+                    <h3 class="gs_reveal">Culte des Huacas:</h3>
+                    <p class="gs_reveal">
+                        Si les Incas imposent le culte du Soleil, ils interdisent rarement l'exercice des croyances
+                        animistes préexistantes. Ainsi la plupart des peuples de l'empire, ainsi que les Incas
+                        eux-mêmes,
+                        accordent une grande importance à des fétiches (huacas). En Quechua, le terme huaca peut
+                        désigner
+                        tout ce qui sort de l'ordinaire ; par extension, il désigne tout ce qui est susceptible de faire
+                        l'objet d'un culte dans le contexte animiste. Les huacas peuvent ainsi être des objets naturels
+                        (comme une montagne ou un rocher) ou artificiels (comme un bâtiment) auxquels on prête une
+                        puissance
+                        surnaturelle. Il existe des huacas partout sur le territoire inca, et on estime à plus de cinq
+                        cents
+                        leur nombre à Cuzco et ses environs. Ils reçoivent de nombreuses offrandes et on cherche à
+                        communiquer avec eux pour obtenir de l'aide ou des conseils.
+                    </p>
+                </div>
+
+                <div class="flex inti-p">
+                    <div class="inti  flex items-center">
+                        <img src="{{ asset ('build/images/inti.png') }}" alt="Init">
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <h3 class="gs_reveal">Culte du soleil et des astres:</h3>
+                        <p class="gs_reveal">
+                            Le fondement commun de la religion inca est une cosmovision basée sur les astres. L’identité
+                            du
+                            dieu principal, le soleil, prend 3 formes qui incarnent les 3 étapes de la course du soleil
+                            : le
+                            père Apu Inti ou seigneur soleil, le fils Churi Inti ou lumière du jour et le frère Inti
+                            Guauqui
+                            aussi au centre du culte de l’ancêtre fondateur de l’empire Inca. L’astronomie permet de
+                            distinguer Apu Inti et Churi Inti le long d’un axe cosmique qui leur attribue respectivement
+                            le
+                            solstice d’été et d’hiver. Le calendrier inca est lunaire et rythmé par la succession des
+                            solstices qui sont fêtés avec de grandes cérémonies ; Inti Raymi pour le solstice d’hiver
+                            qui
+                            rend un culte au soleil, et Capac Raymi pour celui d’été qui est plutôt dédié à l’Inca.
+                            Cette
+                            importance accordée aux astres qui régissent leur rythme de vie entraîne le développement
+                            d’une
+                            excellente connaissance de l’astronomie par les Incas. Des cartes astrales et des cadrans
+                            solaires témoignent de l’observation régulière et approfondie des trajectoires de la lune,
+                            du
+                            soleil et des étoiles.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex mb-16 inti-p mt-16 ">
+                    <div class="p-l">
+                        <h3 class="gs_reveal">
+                            Adoration d’autres divinité:
+                        </h3>
+                        <p class="gs_reveal">
+                            Parallèlement au culte du soleil, les Incas reconnaissaient et adoraient plusieurs autres
+                            divinités. Le plus important d'entre eux est Viracocha, un dieu agricole responsable
+                            notamment
+                            de l'aménagement du sol – les techniques d'irrigations revêtant une importance particulière
+                            pour
+                            les peuples andinsItier. Le lien entre Viracocha et Inti, le soleil, n'est pas clairement
+                            établi. La subordination de l'un à l'autre est floue et dans certaines légendes ils semblent
+                            même interchangeables. Après Viracocha, les Incas révéraient également l'Éclair, Inti Illapa
+                            le
+                            dieu du ciel, du tonnerre et de la foudre.
+                        </p>
+                        <p class="gs_reveal">
+                            L'Empire inca se composant d'une mosaïque de peuples qui n'ont pas forcément été détruits ou
+                            réduits en esclavage, certains cultes locaux ont pu perdurer sans pour autant que le peuple
+                            originaire de Cuzco ne les adopte. Le culte de Pachacamac en est un exemple : c'est un dieu
+                            de
+                            la côte centrale du Pérou dont les origines sont incertaines, mais dont le culte était en
+                            tout
+                            cas antérieur à celui de Viracocha. Le plus grand temple connu consacré à ce dieu s'appelle
+                            lui-même Pachacamac et remonte à l'époque de la culture Lima. Le culte serait probablement
+                            apparu entre l'an 300 et l'an 600. C'est cependant avec la culture Ishmay, civilisation
+                            locale
+                            qui se situait entre les fleuves Rimac et Lurin (1000-1450 ap. J.-C.), que le site de
+                            Pachacamac
+                            connaît son apogée.
+                        </p>
+                    </div>
+                    <div class="inti mr-9  flex items-center">
+                        <img src="{{ asset ('build/images/symbole4.png') }}" alt="Inti Illapa">
+                    </div>
+                </div>
+
+                <div class="full-img pachacamac mb-16">
+                    <img class="parallax-full" src="{{ asset ('build/images/pachacamac.jpg') }}" alt="Pachacamac">
+                </div>
+
+                <div class="mb-16">
+                    <h3 class="text-centergs_reveal">
+                        Divination:
+                    </h3>
+                    <p class="gs_reveal">
+                        La divination tenait une place prépondérante dans la civilisation inca. Avant chaque action
+                        d'importance, on faisait appel à celle-ci et rien d'important ne pouvait être entrepris sans
+                        avoir
+                        auparavant consulté les auspices. La divination était utilisée aussi bien pour prédire le
+                        déroulement des batailles que pour punir un crime.
+                    </p>
+                    <p class="gs_reveal">
+                        l existait plusieurs méthodes de divination : on pouvait observer des araignées se déplacer ou
+                        analyser la disposition que les feuilles de coca prennent sur une assiette plate. Des prophéties
+                        pouvaient être aussi faites à partir de l'étude des entrailles d'animaux sacrifiés, et notamment
+                        les
+                        poumons de lamas.
+                    </p>
+                    <p class="gs_reveal">
+                        Les prêtres vivaient dans tous les temples et autres sanctuaires religieux importants. Ils
+                        remplissaient les fonctions de devins, sorciers, et médecins. Le titre de prêtre en chef à Cuzco
+                        était Villac Umu. Marié, il était souvent un proche parent de l'Inca et son autorité était en
+                        concurrence avec ce dernier.
+                    </p>
+                    <p class="gs_reveal">
+                        Les « femmes choisies », appelées aclla (« vestales » ou pour les Espagnols « vierges du Soleil
+                        »),
+                        forment une institution à part entière. Choisies dès leur plus jeune âge, elles suivent une
+                        éducation particulière. Elles peuvent ensuite être choisies par le Sapa Inca comme concubines,
+                        ou
+                        données à de hauts fonctionnaires, ou même sacrifiées. Elles préparent les aliments cérémoniels
+                        et
+                        confectionnent des vêtements portés par l'Inca et les prêtres.
+                    </p>
+                </div>
+
+                <div class="flex sacrifice mb-16">
+                    <div class="flex flex-col justify-center p-l">
+                        <h6 class="gs_reveal">
+                            Les sacirfices humains:
+                        </h6>
+                        <p class="gs_reveal">
+                            Les sacrifices et offrandes étaient quotidiens, dédiés aux dieux ou aux huacas.
+                            À chaque occasion importante, on offrait un sacrifice. L'animal le plus utilisé était un
+                            lama,
+                            le choix des animaux sacrifiés étant soumis à des règles précises sur la couleur de la
+                            fourrure.
+                        </p>
+                        <p class="gs_reveal">
+                            Les sacrifices humains ne se faisaient que lors de périodes de grands troubles, lorsque
+                            l'Inca
+                            était malade ou mort, par exemple, ou lors de catastrophes naturelles. L'objectif était
+                            alors
+                            d'apaiser le ou les dieux.
+                        </p>
+                        <p class="gs_reveal">
+                            Des analyses réalisées sur des momies particulièrement bien préservées ont permis
+                            d’apprendre
+                            que les enfants choisis pour être sacrifiés étaient exposés à de fortes doses de drogues et
+                            d’alcool avant leur mort.
+                        </p>
+                    </div>
+                    <div class="momie flex items-center">
+                        <img src="{{ asset ('build/images/la-momie-fille-inca.jpg') }}" alt="momie du Llullaillaco">
+                    </div>
+                </div>
+
+                <div>
+                    <p class="gs_reveal">
+                        Les personnes, hommes, femmes ou enfants offerts en sacrifice devaient être en bonne condition
+                        physique et de parfaite constitution. Avant le sacrifice, le sacrifié buvait de la chicha (un
+                        alcool) pour atténuer la perception de ses sens. Dans de nombreux cas, il était ensuite enterré
+                        vivant. Pour l'honorer, les prêtres conduisaient des cérémonies qui l'accompagnaient tandis que
+                        son
+                        esprit quittait la terre. Parmi les jeunes filles choisies dans chaque province pour être femmes
+                        choisies, une partie était destinée à être sacrifiée.
+                    </p>
+                </div>
+                <div class="flex deces mt-16 mb-16">
+                    <div class="squelette  flex items-center justify-center">
+                        <img src="{{ asset ('build/images/incas-2000.jpg') }}" alt="squelette">
+                    </div>
+                    <div class="p-r">
+                        <p class="gs_reveal">
+                            Les momies des Enfants du Llullaillaco (deux filles et un garçons âgés de 6 à 14 ans) ont
+                            été
+                            retrouvés en 1999 près du sommet du volcan (Cordillère des Andes). Cette découverte a permit
+                            aux
+                            chercheurs en 2007, d’ apprendre que le régime alimentaire de la jeune fille avait
+                            brusquement
+                            changé à peu près un an avant sa mort, ce qui marquerait ainsi la date à laquelle elle avait
+                            été
+                            choisie en tant que sacrifice. Des traces de drogues avaient déjà été décelées à ce
+                            moment-là.
+                            Selon les analyses, la consommation de feuilles de coca a visiblement augmenté six mois
+                            avant la
+                            mort de la demoiselle. Pendant les six mois restants, elle n’a ainsi pas arrêté d’en
+                            consommer.
+                            Les radiographies ont même révélé la présence de feuilles de coca dans la bouche de la
+                            défunte.
+                            La consommation d’alcool de la jeune fille, de la chicha (bière fermentée à partir de maïs)
+                            plus
+                            précisément, n’a quant à elle cessé d’augmenter jusqu’à son décès.
+                        </p>
+                        <h3 class="gs_reveal">
+                            Décès:
+                        </h3>
+                        <p class="gs_reveal">
+                            Pour escorter l'Inca dans son voyage dans l'autre monde, deux de ses femmes, un serviteur et
+                            un
+                            guerrier étaient sacrifiés le jour de sa mort. Prétendument volontaires, ils étaient choisis
+                            dès
+                            leur plus jeune âge et enterrés vivants. Le corps de l'Inca, embaumé, était placé face au
+                            temple
+                            du soleil à Cuzco. Les obsèques duraient une année, pendant laquelle la population revêtait
+                            les
+                            insignes de l'Inca et chantait ses louanges, de façon continue le premier mois, puis tous
+                            les
+                            quinze jours, à chaque pleine et nouvelle lune
+                        </p>
+                    </div>
+                </div>
+
+                <div class="full-img mb-16">
+                    <img class="parallax-full" src="{{ asset ('build/images/temple-du-soleil.jpg') }}"
+                         alt="temple du soleil">
+                </div>
+                <div class="mb-16">
+                    <h3 class="text-center gs_reveal">
+                        Temple du soleil:
+                    </h3>
+                    <p class="gs_reveal">
+                        En signe d'allégeance ou de véritable vénération, les peuples soumis par les Incas bâtissent
+                        dans
+                        leurs provinces de nombreux lieux de culte au soleil. Certains sont encore visibles de nos jours
+                        et
+                        témoignent de l'extension géographique du culte. Au Pérou se trouvent ainsi le temple de
+                        Coricancha
+                        à Cuzco, le temple Vilcashuaman et celui de Huascarán. En Bolivie, un temple du Soleil avait
+                        aussi
+                        été érigé sur l'Isla del Sol du lac Titicaca. À Caranqui, Équateur, se trouve un temple qui
+                        autrefois contenait des jarres pleines d'or et d'argent.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="flex justify-center mb-16">
+                <ul class="pagination modal-3">
+                    <li><a href="{{ path("culture") }}" class="prev">&laquo</a></li>
+                    <li><a href="{{ path("culture") }}">1</a></li>
+                    <li><a href="{{ path("culture-religion") }}" class="active"> 2 </a></li>
+                    <li><a href="{{ path("culture-other") }}"> 3 </a></li>
+                    <li><a href="{{ path("culture-other") }}" class="next">&raquo;</a></li>
+                </ul>
+            </div>
+
+            <div id="videos">
+                <h2 class="gs_reveal">Documentaires Vidéo:</h2>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

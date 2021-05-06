@@ -3,19 +3,23 @@
 {% block title %}Culture{% endblock %}
 
 {% block body %}
-    <video muted loop controls {#autoplay#} class="video_header">
-        <source src="{{ asset('videos/video_header.mp4') }}" type="video/mp4">
-    </video>
 
+{#    <video muted loop controls #}{#autoplay#}{# class="video_header">#}
+{#        <source src="{{ asset('videos/video_header.mp4') }}" type="video/mp4">#}
+{#    </video>#}
+    <div>
+        <img   class="cult-header" src="{{ asset('build/images/au-pays-de-linca.jpg') }}" alt="header classes sociales">
+    </div>
+    <div class="contenaire">
     <div class="cult-content">
+
         <h1 class="mt-16">Culture Inca</h1>
         <div class=" intro-cult flex items-center " >
-            <div class="img" >
+            <div class="img " >
                 <img src="{{ asset('build/images/symbole_1.png') }}" alt="symbole inca">
             </div>
-            <div class="txt">
-                <p id="output">
-                </p>
+            <div class="txt p-r">
+                <p id="output"></p>
             </div>
         </div>
 
@@ -27,24 +31,24 @@
             <span class="horizontal"></span>
 
             <ul id="summary">
-                <a href="#social"><li>Classes sociales</li></a>
-                <a href="#agriculture"><li>Agriculture</li></a>
-                <a href="#life"><li>Mode de vie</li></a>
-                <a href="#religion"><li>Religion</li></a>
-                <a href="#architecture"><li>Architectures et scultures</li></a>
+                <a href="{{ path('culture') }}#social"><li>Classes sociales</li></a>
+                <a href="{{ path('culture-other') }}#agriculture"><li>Agriculture</li></a>
+                <a href="{{ path('culture') }}#life"><li>Mode de vie</li></a>
+                <a href="{{ path('culture-religion') }}#religion"><li>Religion</li></a>
+                <a href="{{ path('culture-other') }}#architecture"><li>Architectures et scultures</li></a>
                 <a href="#videos"><li>Vidéos</li></a>
             </ul>
         </div>
 
         <div id="social">
-            <div class="full-img">
-                <img class="parallax-full" src="{{ asset('build/images/au-pays-de-linca.jpg') }}" alt="header classes sociales">
-            </div>
+{#            <div class="full-img">#}
+{#                <img class="parallax-full" src="{{ asset('build/images/au-pays-de-linca.jpg') }}" alt="header classes sociales">#}
+{#            </div>#}
             <div>
-                <h2>
+                <h2 class="gs_reveal">
                     Classes Sociales:
                 </h2>
-                <p class="text-justify">
+                <p class="text-justify gs_reveal marge italic ">
                     La hiérarchie dans l'empire inca reprend l'organisation traditionnelle des communautés andines.
                     L'Inca est à la fois chef de son clan et souverain de tout l'empire. L'organisation communautaire
                     est à la base de la structure de l'empire. Dans de nombreux cas, l'Inca conquérant veille à ne pas
@@ -55,16 +59,16 @@
                 </p>
             </div>
 
-            <div class="flex social-inca">
-                <div class="flex flex-col justify-center txt">
-                    <p class="text-justify ">
+            <div class="flex social-inca mb-16">
+                <div class="flex flex-col justify-center txt  p-l">
+                    <p class="text-justify gs_reveal ">
                         Cette société était donc fondée sur un système de castes et on ne pouvait que très difficilement et
                         exceptionnellement changer de rang. Un individu de la classe laborieuse pouvait accéder à la classe
                         dirigeante à la suite d'un exploit militaire ou grâce à quelque autre mérite. Il arrivait, dans un
                         but politique, que des dirigeants coopératifs de peuples vaincus obtiennent des postes à
                         responsabilités, souvent celui de Kurakas.
                     </p>
-                    <p>
+                    <p class="gs_reveal ">
                         Le groupe social de base est formé par la famille constituée des parents et des enfants
                         célibataires. L'homme travaille aux champs, et pratique éventuellement de l'artisanat, tandis
                         que la
@@ -73,7 +77,7 @@
                         par
                         l'ensemble de la communauté.
                     </p>
-                    <p>
+                    <p class="gs_reveal ">
                         Les peuples des Andes sont répartis dans de nombreux villages situés sur des hauteurs.
                         L'ensemble
                         des familles, la plupart du temps liées par le sang, qui habitent un village forme un ayllu. Un
@@ -82,41 +86,45 @@
                         des
                         terres agricoles, distribuées par lots, ainsi que des pâturages, d'accès collectif.
                     </p>
-                    <h3>
-                        L'élite:
-                    </h3>
-                    <p>
-                        Au sommet de la pyramide sociopolitique se trouvait le souverain, le Sapa Inca, c'est-à-dire «
-                        seul
-                        Inca », le fils du Soleil, qui régnait en maître absolu : le pouvoir était centralisé et
-                        d'origine
-                        divine. Toute une élite dirigeante, formée principalement des lignages des souverains
-                        antérieurs,
-                        les panaqas impériaux, gravitait autour de l'empereur. Cette noblesse de naissance occupait les
-                        plus
-                        hautes fonctions administratives, militaires et religieuses. Toutefois, le pouvoir n'était pas
-                        réservé à ces seuls dignitaires. En effet, les chefs locaux (curacas) continuaient d'exercer
-                        leur
-                        autorité, tant qu'ils restaient fidèles au souverain et se soumettaient à la tutelle impériale ;
-                        ils
-                        n'étaient destitués que s'ils étaient défaits militairement ou s'ils résistaient à la conquête
-                        inca.
-                    </p>
                 </div>
+
                 <div class="inca  flex items-center">
                     <img src="{{ asset('build/images/inca.jpg') }}" alt="inca">
                 </div>
             </div>
 
-            <div class="flex place-femmes">
+            <div class="marge">
+                <h3 class="gs_reveal">
+                    L'élite:
+                </h3>
+                <p class="gs_reveal">
+                    Au sommet de la pyramide sociopolitique se trouvait le souverain, le Sapa Inca, c'est-à-dire «
+                    seul
+                    Inca », le fils du Soleil, qui régnait en maître absolu : le pouvoir était centralisé et
+                    d'origine
+                    divine. Toute une élite dirigeante, formée principalement des lignages des souverains
+                    antérieurs,
+                    les panaqas impériaux, gravitait autour de l'empereur. Cette noblesse de naissance occupait les
+                    plus
+                    hautes fonctions administratives, militaires et religieuses. Toutefois, le pouvoir n'était pas
+                    réservé à ces seuls dignitaires. En effet, les chefs locaux (curacas) continuaient d'exercer
+                    leur
+                    autorité, tant qu'ils restaient fidèles au souverain et se soumettaient à la tutelle impériale ;
+                    ils
+                    n'étaient destitués que s'ils étaient défaits militairement ou s'ils résistaient à la conquête
+                    inca.
+                </p>
+            </div>
+
+            <div class="flex place-femmes marge">
                 <div class="femmes  flex items-center">
                     <img src="{{ asset('build/images/peru-femmes.jpg') }}" alt="femmes inca">
                 </div>
-                <div class="flex flex-col justify-center">
-                    <h3>
+                <div class="flex flex-col justify-center  p-r">
+                    <h3 class="gs_reveal text-center">
                         La place des femmes
                     </h3>
-                    <p>
+                    <p class="gs_reveal">
                         Il existait aussi des catégories strictement féminines, qui correspondaient aux mamaconas et aux
                         aqllas, souvent appelées « femmes choisies ». Les femmes de la noblesse étaient désignées pour
                         diverses fonctions du culte, les femmes d'une beauté exceptionnelle étaient choisies pour
@@ -132,155 +140,41 @@
             </div>
         </div>
 
-        <div id="agriculture">
-            <div class="full-img">
-                <img class="parallax-full" src="{{ asset('build/images/moray-maras.jpg') }}" alt="moray-maras">
-            </div>
-            <div>
-                <h2>
-                    Agriculture:
-                </h2>
-                <p class="intro mt-10">
-                    Peuple du soleil, les Incas ont aussi été précurseurs de nombreuses techniques agricoles.
-                </p>
-                <p>
-                    Ils contrôlaient un vaste empire qui comprenait quatre zones climatiques et, par conséquent, leur
-                    production agricole est diverse. Les gens des Andes antiques étaient en grande partie végétarien,
-                    ajoutant parfois à leur régime avec camelid viandes et fruits de mer si ils pouvaient l'obtenir.
-                    L'état Inca mis au point un appareil agricole énorme, où cultures et troupeaux ont été
-                    réquisitionnés de peuples conquis et les gens eux-mêmes ont été régulièrement réquisitionnés pour
-                    travailler dans des fermes d'Etat. Plus positivement, un vaste réseau d'installations d'entreposage
-                    a été développé pour s'assurer contre la sécheresse et des catastrophes et des denrées alimentaires
-                    ont été souvent donnés comme cadeaux par les dirigeants qui cherchent à se faire populaire.
-                </p>
-                <h3>
-                    Organisation et méthodes:
-                </h3>
-                <p>
-                    Un niveau microéconomique chaque unité familiale a produit sa propre nourriture. Unités familiales
-                    faisaient partie d'un plus large groupe parental ou l' ayllu qui collectivement la propriété des
-                    terres agricoles. Idéalement, un ayllu serait possèdent au moins quelques terres dans les highlands
-                    et les basses terres plus tempérées afin qu'une diversité de produits alimentaires puisse être
-                    cultivée. Par exemple, les hautes terres pourraient offrir de bons pâturages et permettre la
-                    production de pommes de terre et maïs, tandis que coca ne pouvait être cultivée à des altitudes
-                    inférieures. Une superficie de terres pour la culture du maïs (peut-être environ 1,5 acre) appelée
-                    un tupu a donné aux jeunes mariés leurs ayllu afin qu'ils puissent être autonomes. Elle était accrue
-                    d'une quantité égale, ou moindre de moitié, à chaque naissance de fils ou de fille. Le tupu était
-                    concédé à titre éminemment précaire, Ia mort où le mariage d'un enfant entraînait une suppression
-                    correspondant de terrain. Si le père de famille venait à disparaître, la veuve conservait pour sa
-                    subsistance et celle de ses enfants la surface accordée et un devoir strict de solidarité obligeait
-                    les gens du groupement à lui venir en aide. Des châtiments sévères attendaient le paresseux, le
-                    gaspilleur du précieux liquide, l'eau, car il compromettait à la fois sa récolte et celle des
-                    voisins qui étaient tributaires de sa propre irrigation.
-                    Si le propriétaire d'un terrain est mort sans héritier, la terre a été retournée à l' ayllu pour
-                    redistribution future.
-                </p>
-            </div>
-
-            <div class="flex items-center p-terraces justify-center">
-                <div>
-                    <p>
-                        Les terres ont été travaillées en utilisant des outils simples comme une houe, brise Motte et
-                        pied plough (le chakitaqlla), qui se composait d'un bois ou bronze pointus, pôle qui a été
-                        poussé dans le sol en plaçant son pied sur une barre horizontale. Les Couteaux ont été
-                        généralement faites à l'aide de pavés aiguisé. L'agriculture était une pratique communautaire,
-                        et agriculteurs travaillaient en petites équipes de sept ou huit, chantant souvent alors qu'ils
-                        travaillaient avec les hommes en train de sarcler et femmes suit derrière, briser les mottes et
-                        en semant des graines. Pendant ce temps, enfants et jeunes adultes étaient responsables de la
-                        tendant au troupeau familial de camélidés.
-
-                    </p>
-                </div>
-                <div class="terraces  flex items-center">
-                    <img src="{{ asset('build/images/anciennes-ruines-terrasses-agricoles-incas.jpg') }}" alt="terrasse-agricoles">
-                </div>
-            </div>
-
-            <div>
-                <p>
-                    Les cultures cultivées à travers l'Empire Inca inclus maïs, coca, haricots, céréales, pommes de
-                    terre, patates douces, ulluco, oca, mashwa, poivre, tomates, arachides, noix de cajou, courge,
-                    concombre, quinoa, Gourde, coton, talwi, caroube, chirimoya, lúcuma, guayabo et avocat. Le bétail
-                    était principalement des troupeaux de lamas et des alpagas. Ces animaux ont été vital pour beaucoup
-                    d'aspects de la vie andine car ils ont fourni la laine, viande, cuir, meubles richesse, transports
-                    (en particulier pour l'armée), et ils ont été souvent sacrifiés dans les cérémonies religieuses.
-                    Certaines des plus grandes publiques troupeaux pourrait avoir des dizaines de milliers d'animaux, et
-                    tous les troupeaux ont été méticuleusement répertoriées dans un recensement d'État mené de novembre
-                    de chaque année.
-                </p>
-                <p>
-                    Les Incas étaient agriculteurs ambitieux: ils ont transformé le paysage avec terrasses, de canaux,
-                    avec des réseaux d'irrigation . Afin d'optimiser la production agricole, ils ont transformé le
-                    paysage avec réseaux terrassement, canaux et irrigation, tandis que les zones humides ont été
-                    souvent drainées pour les rendre appropriés à l'agriculture. En outre, les Incas connaissaient
-                    parfaitement les valeurs de la rotation régulière des cultures, et elles aussi fertilisé la terre
-                    avec la bouse de Lama séché, guano ou têtes de poisson si ces matières étaient disponibles. Malgré
-                    cela, le climat souvent rude d'andine pourrait apporter des inondations, sécheresses et tempêtes
-                    qui, ainsi que de la maladie, signifiait que les mauvaises récoltes annuelles n'étaient pas rares.
-                    Dans ce cas le talent de l'Inca pour la conservation des aliments est entré en sa propre.
-                </p>
-            </div>
-
-            <div class="full-img qollqa">
-                <img class="parallax-full" src="{{ asset('build/images/qollqa.jpg') }}" alt="qollqa">
-            </div>
-            <div>
-                <h3 class="text-center">
-                    Conservation des aliments:
-                </h3>
-                <p>
-                    Les denrées alimentaires (et autres marchandises) étaient stockés dans des entrepôts (qollqa) qui
-                    ont été construits dans les dizaines de milliers dans l'empire, généralement disposées en rangées et
-                    à proximité de centres de population, grands domaines et stations de bord de la route. Représentants
-                    de l'état conservé des comptes minutieuse de leurs stocks en utilisant le quipu, un dispositif
-                    d'enregistrement des cordes et noeuds. Qollqa étaient des pièces simples bâtiments en pierre, soit
-                    circulaires ou rectangulaires, qui ont été construits d'une manière remarquablement uniforme. Placé
-                    sur les coteaux de profiter de la brise fraîche, qollqa ont été conçus pour maximiser la durée de
-                    conservation des marchandises périssables avec lequel ils ont été remplis. Ils avaient des canaux de
-                    drainage, sol de gravier et ventilation dans le plancher et le toit afin de garder l'intérieur aussi
-                    cool et sèches que possible afin que les marchandises ordinaires pourraient être conservés pendant
-                    jusqu'à deux ans et les aliments lyophilisés jusqu'à quatre ans. Les archéologues ont constaté que
-                    le maïs, pommes de terre et quinoa étaient plus courantes denrées stockées dans qollqa. Maïs et coca
-                    de ces magasins ont été fréquemment donnés aux masses par recherche de popularité des dirigeants et
-                    en période de mauvaises récoltes.
-                </p>
-            </div>
-        </div>
 
         <div id="life">
             <div class="full-img">
                 <img class="parallax-full" src="{{ asset('build/images/incas-header.PNG') }}" alt="inca header">
             </div>
             <div>
-                <h2>
+                <h2 class="gs_reveal">
                     Mode de vie:
                 </h2>
             </div>
             <div class="flex life-alim">
-                <div class="flex flex-col items-center txt">
-                    <h3>Alimentation:</h3>
-                    <p>
+                <div class="flex flex-col items-center txt p-l">
+                    <h3 class="gs_reveal">Alimentation:</h3>
+                    <p class="gs_reveal">
                         Les paysans incas, comme leurs descendants péruviens actuels, prennent deux repas par jour (vers
                         8h et 16 ou 17h) et une légère collation vers midi. Il est la grande majorité du temps
                         végétarien et composé de plantes et légumes bouillis dans une marmite. La viande, du lama ou de
                         l'alpaca séché ou du cochon d'Inde rôti, est réservée aux jours de fêtes. Néanmoins, sur la
                         côte, les poissons sont très consommés.
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         Le légume de base est la pomme de terre, qui peut être conservée pendant plus de cinq ans grâce
                         à un processus de conservation complexe (qui comprend notamment l'exposition au gel et
                         l'écrasement). Le maïs est également l'un des aliments de base, mais en plus grande quantité sur
                         la côte que dans les Andes. Il est souvent utilisé pour produire de la bière légèrement
                         alcoolisée.
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         Enfin, ils mastiquent des feuilles de coca pour ses vertus médicinales et son effet « coupe-faim
                         »
                     </p>
-                    <h3>
+                    <h3 class="gs_reveal">
                         Médecine:
                     </h3>
-                    <p>
+                    <p class="gs_reveal">
                         Les civilisations croyaient que quand ils étaient malades, c’est les dieux qui les punnissaient.
                         Pour se soigner ils utilisaient les rites et les prières, ou bien faisaient appel aux médicament
                         naturels comme la boue bleu, qui était rare.. Un jardin a donc été aménagé au cœur des
@@ -297,89 +191,91 @@
                 <img src="{{ asset('build/images/cranes.PNG') }}" alt="trépanation">
             </div>
             <div>
-                <h6>Trépanation:</h6>
-                <p>
+                <h6 class="gs_reveal">Trépanation:</h6>
+                <p class="gs_reveal italic marge" >
                     Les Incas ont, non seulement, laissé un précieux héitage artistique, architectural et culturel, mais
                     aussi une contribution exceptionnelle à la médecine, il est aujourd’hui avéré que la civilisation
                     préhispanique était même en avance sur son temps.
                 </p>
-                <p>L’étude révèle que les Incas étaient de meilleurs chirurgiens du crâne que des médecins de la guerre
+                <p class="gs_reveal">L’étude révèle que les Incas étaient de meilleurs chirurgiens du crâne que des médecins de la guerre
                     civile américaine, le taux de mortalité n’était que de 20%, alors qu’aux XIXe siècle; il atteignait
                     50%.</p>
-                <p>
+                <p class="gs_reveal">
                     Parmi les opérations menées par les médecins incas, il y avait la trépanation aussi applée
                     craniotomie, qui consistait à percer le crâne humain pour des raisons de santé, sans anesthésie ou
                     antibiotiques, or cette chirurgie délicate pratiquée par différents civilisations depuis des
                     milliers d’années était particulièrement maîtrisée sous l’ère précolombienne avec un taux de
                     réussite de 80% par rapport à une moyenne de 50% enregistrée pendant la guerre civile américaine.
                 </p>
-                <p>
+                <p class="gs_reveal">
                     La chirurgie à la tête est loin d’être simple, et se lancer dans cette procédure sans avoir accès à
                     toute la technologie moderne peut sembler insensé. Pourtant, une ancienne forme de chirurgie du
                     crâne, appelée trépanation, a été une pratique millénaire et répandue.
                 </p>
-                <p>
+                <p class="gs_reveal">
                     Il s’agit d’une opération au cours de laquelle le médecin soulève une partie du cuir chevelu, puis
                     creuse un trou dans le crâne avant de refermer la plaie. Beaucoup de patients en mouraient, mais il
                     y avait assez de survivants pour que le traitement perdure.
                 </p>
-                <p>
+                <p class="gs_reveal">
                     Pourquoi vouloir pratiquer un trou dans la paroi crânienne? Bien qu’il soit possible que la
                     procédure ait été effectuée pour des raisons religieuses, plusieurs études ont montré son rôle en
                     tant qu’acte médical.
                 </p>
-                <p>
+                <p class="gs_reveal">
                     La trépanation était souvent pratiquée sur des personnes ayant subi un traumatisme crânien. Dans ces
                     situations, l’enflure et l’accumulation de liquide dans la tête pouvaient être mortelles. Pratiquer
                     ces trous et retirer des fragments d’os auraient pu aider à réduire la pression.
                 </p>
-                <p>
+                <p class="gs_reveal">
                     Il est aussi possible que cette technique ait servi de traitement contre les migraines ou les
                     maladies mentales. Hippocrate, le père de la médecine en Grèce antique, la proposait même comme
                     traitement contre l’épilepsie.
                 </p>
-                <p>
+                <p class="gs_reveal">
                     La trépanation était une pratique courante en Amérique du Sud, où les conditions géologiques
                     favorables à la préservation d’ossements ont permis à une grande quantité de crânes de patients
                     ayant subi l’intervention de se rendre jusqu’à nous.
                 </p>
-                <p>
+                <p class="gs_reveal">
                     Un os dont le pourtour du trou était cassé net ou portait des traces d’outils indique que la
                     personne est morte pendant (ou tout de suite après) la procédure. Toutefois, si l’os est lisse et
                     arrondi, cela indique qu’il y a eu guérison et que la personne a survécu plusieurs mois ou même des
                     années après l’intervention.
                 </p>
             </div>
-            <div class="flex justify-center mt-16 mb-16 crane">
+            <div class="flex justify-center marge crane">
                 <img src="{{ asset('build/images/deformation.jpg') }}" alt="déformation crânienne">
             </div>
             <div>
-                <h6>
+                <h6 class="gs_reveal">
                     Déformation crânienne:
                 </h6>
-                <p>
-                    La déformation artificielle du crâne des nouveau-nés est une antique tradition universelle. De
-                    l’Europe aux Amériques en passant par l’Afrique, l’Asie, l’Océanie, aucune région n’échappa au
-                    modelage crânien.
-                </p>
-                <p>
-                    Ces pratiques restent toujours vivaces dans ces régions lorsque les Incas dominent une grande partie
-                    de la Cordillère à partir du milieu du XVᵉ siècle. Un certain nombre de communautés sous leur
-                    domination avaient depuis longtemps pour habitude de déformer artificiellement l’occiput des
-                    nourrissons, à l’instar de leurs vainqueurs.
-                </p>
-                <p>
+                <div class="marge">
+                    <p class="gs_reveal italic">
+                        La déformation artificielle du crâne des nouveau-nés est une antique tradition universelle. De
+                        l’Europe aux Amériques en passant par l’Afrique, l’Asie, l’Océanie, aucune région n’échappa au
+                        modelage crânien.
+                    </p>
+                    <p class="gs_reveal italic mb-16">
+                        Ces pratiques restent toujours vivaces dans ces régions lorsque les Incas dominent une grande partie
+                        de la Cordillère à partir du milieu du XVᵉ siècle. Un certain nombre de communautés sous leur
+                        domination avaient depuis longtemps pour habitude de déformer artificiellement l’occiput des
+                        nourrissons, à l’instar de leurs vainqueurs.
+                    </p>
+                </div>
+                <p class="bold gs_reveal text-center h7">
                     Déformer les crânes pour fixer l’âme au corps:
                 </p>
-                <p class="bold">
+                <p class="gs_reveal">
                     Mais pourquoi les Incas déformaient-ils les crânes ?
                 </p>
-                <p>
+                <p class="gs_reveal">
                     Le modelage crânien permet de distinguer les peuples entre eux, imprime de manière indélébile dans
                     le corps l’appartenance à un groupe, pare et embellit les individus, marque le statut social,
                     renvoie vers la religion, la cosmologie, les croyances et les rites d’initiation.
                 </p>
-                <p>
+                <p class="gs_reveal">
 
                     La tête représente le centre de la vie spirituelle de l’individu. C’est le siège de la force vitale
                     et elle symbolise l’esprit. La force animique, c’est-à-dire une puissance bénéfique et spirituelle,
@@ -388,7 +284,7 @@
                     tête peut être associée à deux caractéristiques principales : elle représente métaphoriquement le
                     cosmos et c’est écrin de l’âme.
                 </p>
-                <p>
+                <p class="gs_reveal">
                     Dans la cosmologie inca, il existe une opposition corporelle : devant/derrière – les Incas associent
                     le devant du corps avec le passé et la clarté/et l’arrière avec le futur et l’obscurité – et une
                     opposition haut/bas, la tête correspondant au monde supérieur, celui du corps idéal représenté par
@@ -396,15 +292,15 @@
                     des plus importants est l’animu, terme emprunté à l’espagnol anima, « âme », qui est une « force
                     animique », spirituelle et pas seulement humaine ».
                 </p>
-                <p>
+                <p class="gs_reveal">
                     Afin de fixer l’âme au corps, la mise en œuvre de moyens techniques, comme les déformations
                     crâniennes, s’avère indispensable et impérieuse. Déformer la tête c’est durcir et fermer le corps,
                     solidifier, remettre en ordre au moins une de ses ouvertures.
                 </p>
-                <p class="bold">
+                <p class="bold gs_reveal h7">
                     Comment faisait-on chez les Incas ?
                 </p>
-                <p>
+                <p class="gs_reveal">
 
                     Plusieurs techniques sont mises en œuvre pour déformer les crânes. Le crâne de l’enfant est très
                     malléable et cette souplesse permet d’envisager un modelage avant que la forme définitive ne se
@@ -414,8 +310,8 @@
             </div>
 
             <div class="flex mb-16 deform">
-                <div class="flex flex-col justify-center txt">
-                    <p>
+                <div class="flex flex-col justify-center txt p-l">
+                    <p class="gs_reveal">
                         Les têtes étaient déformées selon plusieurs méthodes, l’aplatissement affectant soit le haut du
                         crâne, soit les côtés. Les appareils déformateurs mis en œuvre sont de trois types : le berceau
                         dans lequel la déformation est obtenue par la pression exercée sur la tête du nouveau-né couché
@@ -431,19 +327,19 @@
                 </div>
             </div>
 
-            <div class="flex ecriture">
+            <div class="flex ecriture marge">
                 <div class="quipus  flex items-center">
                     <img src="{{ asset('build/images/quipus.jpg') }}" alt="quipus">
                 </div>
-                <div class="flex flex-col justify-center">
-                    <h3>
+                <div class="flex flex-col justify-center p-r" >
+                    <h3 class="gs_reveal">
                         l'écriture:
                     </h3>
-                    <p>
+                    <p class="gs_reveal italic">
                         Alors que l'empire inca était très structuré et bureaucratisé, l'écriture n'y a apparemment pas
                         existé.
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         En revanche, un système de quipus a été mis en place. Les quipus sont des messages codés sous la
                         forme de nœuds de différentes sortes sur des fils de laine, coton ou autre matériau et de
                         différentes couleurs. Ces quipus servaient aux statistiques de l'État : recensement très précis
@@ -453,7 +349,7 @@
                         c'étaient les quipucamayocs. Ce système de quipus était aussi utilisé par les dirigeants des
                         provinces pour transmettre les nouvelles importantes à l'Inca.
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         Il semblerait que les quipus aient aussi servi à notifier les grandes dates de l'Histoire et à
                         consigner certains récits ou secrets religieux mais ceux-ci restent indéchiffrables de nos jours
                         contrairement à certains quipus de statistiques.
@@ -461,14 +357,14 @@
                 </div>
             </div>
 
-            <div class="flex mess">
-                <div class="txt">
-                    <p>
+            <div class="flex mess marge">
+                <div class="txt flex justify-center flex-col p-l">
+                    <p class="gs_reveal">
                         Les Incas envoyaient ces quipus ainsi que d’autres messages (qu’ils se transmettaient de manière
                         orale) avec une rapidité étonnante aux coins les plus éloignés de l’empire. On estime ainsi
                         qu’il fallait moins d’une semaine à un message pour aller de Cuzco à Quito (2000km !!!).
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         Ces messagers, appelés « chasquis », étaient agiles et hautement entraînés. Ils se relayaient
                         tous les 3km sur le vaste réseau routier et ainsi permettaient un contrôle de l’empire depuis
                         Cusco.
@@ -481,15 +377,15 @@
             <div class="full-img">
                 <img class="parallax-full" src="{{ asset('build/images/fille.jpg') }}" alt="fille header">
             </div>
-            <div>
-                <h3 class="text-center">L'éducation</h3>
-                <p>
+            <div class="marge">
+                <h3 class="text-center gs_reveal">L'éducation</h3>
+                <p class="gs_reveal italic marge">
                     Toutes les informations sur leur éducation proviennent des chroniques écrites par les Espagnols lors
                     de la conquête et de la colonie. De même, les informations ont été transmises oralement. Grâce à
                     toutes ces sources, on peut aujourd’hui conclure qu’il y avait eu une éducation pendant les Incas.
                     Et il était destiné uniquement aux classes sociales supérieures.
                 </p>
-                <p>
+                <p class="gs_reveal">
                     Le système éducatif des Incas ne couvrait pas les gens en général.
                     Il était spécifiquement dédié aux enfants de la noblesse Inca, aux enfants des souverains des
                     villages et aux femmes choisies pour leur beauté et leur statut social.
@@ -500,7 +396,7 @@
                     Les professeurs qui enseignaient s’appelaient ‘Amautas’. L’enseignement a été par la pratique, la
                     répétition et l’expérience.
                 </p>
-                <p>
+                <p class="gs_reveal">
                     Ainsi, les jeunes ont eu dès leur enfance une éducation pratique qui leur permettait de s’acquitter
                     de leurs tâches quotidiennes: semer, récolter, combattre et plus encore.
                     Les parents étaient chargés de l’éducation de leurs enfants. Ils étaient également chargés de
@@ -515,24 +411,24 @@
                     <img src="{{ asset('build/images/symbole3.png') }}" alt="symbole dieu inca">
                 </div>
                 <div class="flex flex-col justify-center">
-                    <p class="bold">
+                    <p class="bold gs_reveal">
                         L’éducation des hommes:
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         L’école pour les jeunes s’appelait ‘Yachaywasi‘ (Maison de la connaissance). Il y avait
                         plusieurs dans l’Empire Inca bien que le principal était dans la ville actuelle de Cusco.
                         Les enfants des nobles ont reçu un enseignement de la langue quechua au cours de la première
                         année d’éducation.
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         Au cours des autres années ils ont: appris la religion Inca,
                         reçu une formation sur l’interprétation du quipus et la quatrième année était consacrée à
                         l’enseignement de l’histoire des Incas.
                         En outre, ils ont également reçu des formations physiques et des techniques militaires tout au
                         long du temps.
                     </p>
-                    <p class="bold">L’éducation des femmes:</p>
-                    <p>
+                    <p class="bold gs_reveal">L’éducation des femmes:</p>
+                    <p class="gs_reveal">
                         Les écoles pour jeunes filles s’appelaient ‘Acllahuasi‘ (Maison de l’élu).
                         L’éducation des femmes était très différente de celle des garçons.
                         Cependant, toutes les filles de l’empire Inca n’ont pas eu la possibilité d’aller à l’école.
@@ -542,7 +438,7 @@
                         Son éducation a également duré 4 ans et consistait à cuisiner, tisser, filer, préparer la chicha
                         et la religion.
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         Seul un petit groupe d’entre eux n’avait aucun contact avec le monde extérieur. Elles ont été
                         nommés Vierges du Soleil. Sa fonction était de préparer tout ce qui avait trait aux rites
                         religieux. Personne ne pouvait voir ou approcher d’eux.
@@ -552,24 +448,29 @@
                 </div>
             </div>
 
-            <div class="full-img">
+            <div class="full-img marge">
                 <img class="parallax-full" src="{{ asset ('build/images/machupichu-paysage.jpg') }}" alt="paysage matchupichu">
             </div>
-            <div class="flex temps">
-                <div class="flex flex-col justify-center txt">
-                    <h3 class="text-center">
+            <div class="flex temps mt-16 mb-16">
+                <div class="flex flex-col justify-center txt p-l">
+                    <h3 class="text-center gs_reveal">
                         Notion de temps:
                     </h3>
-                    <p>
+
+                    <p class="gs_reveal italic">
                         Dans un pays où l’activité agricole devait s’effectuer en fonction des saisons, avoir une
-                        perception précise du temps qui s’écoule était cruciale. C’est ainsi que des constructions ont
+                        perception précise du temps qui s’écoule était cruciale.
+                    </p>
+
+                    <p class="gs_reveal">
+                        C’est ainsi que des constructions ont
                         été érigées sur des crêtes pour déterminer le mois et le jour en fonction de la position du
                         soleil entre ces constructions. C’est notamment de cette manière que les Incas ont pu connaître
                         à quel moment intervenait le solstice d’hiver et d’été.
                         D’autres piliers marquaient le début et la fin des semailles du maïs. Ces horloges monumentales
                         s’appelaient pacha unanchaq, « qui signale le temps », littéralement en quechua.
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         Le calendrier Inca comprenait une année constituée de douze mois, respectivement de 30 à 31
                         jours.
                     </p>
@@ -578,34 +479,34 @@
                     <img src="{{ asset ('build/images/los-incas.jpg') }}" alt="horloge solaire">
                 </div>
             </div>
-            <div class="flex vetements">
-                <div class="tissus  flex items-center">
+            <div class="flex vetements mb-16">
+                <div class="tissus">
                     <img src="{{ asset ('build/images/tissus.jpg') }}" alt="tissus">
                 </div>
-                <div class="flex flex-col justify-center txt">
-                    <h3 class="text-center">Vetements:</h3>
-                    <p>
+                <div class="flex flex-col justify-center txt p-r">
+                    <h3 class="text-center gs_reveal">Vetements:</h3>
+                    <p class="gs_reveal">
                         Les paysans incas portent tous des vêtements assez semblables. Il s'agit, pour les hommes, d'un
                         pagne et d'une tunique sans manches auxquels on ajoute une cape lorsque les conditions
                         climatiques ou cérémonielles l'exigent.
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         Les femmes, elles, portent une robe et une cape. Leur robe est constituée d'un simple morceau de
                         tissu rectangulaire, enroulé autour d'elles et maintenu par une ceinture et deux fibules
                         circulaires au niveau des épaules. La cape est elle accrochée via une épingle ou un nœud sur le
                         devant. Leurs cheveux sont ceints d'un bandeau et elles portent généralement un voile léger pour
                         s'abriter du soleil.
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         Les vêtements sont généralement noirs ou marron dans les hautes terres où ils sont faits de
                         laine, et blancs sur la côte où le coton est principalement utilisé. Ils sont la plupart du
                         temps faits d'une seule pièce, et non pas composés de différents morceaux cousus entre eux.
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         Mais la coiffure masculine est également un autre moyen de différenciation : l'élite porte des
                         cheveux très longs, alors que le peuple se rase court.
                     </p>
-                    <p>
+                    <p class="gs_reveal">
                         Les deux sexes portent aux pieds des sandales ou des mocassins. Ils arborent également des
                         bijoux : les hommes portent notamment des ornements d'oreille cylindriques qui leur déforment
                         les lobes, d'où leur surnom d'orejones ("oreillards") que leur donnent les Espagnols. Les femmes
@@ -613,300 +514,45 @@
                     </p>
                 </div>
             </div>
-            <div class="mb-16">
-                <h3 class="text-center">
+            <div class="marge">
+                <h3 class="text-center gs_reveal">
                     Jeux et divertissements:
                 </h3>
-                <p>
+                <p class="gs_reveal">
                     Le quotidien des paysans incas ne comporte que peu de divertissements, hormis ceux liés au travail
                     en commun et aux cérémonies (ces deux derniers cas sont en effet des occasions de fêtes).De grandes
                     battues sont organisées par le Sapa Inca tous les quatre ans; elles sont également l'occasion de
                     festoyer et de consommer de la viande. Les cérémonies en l'honneur d'une divinité ou d'un haut
                     personnage sont elles l'occasion de danser et de jouer de la musique.
                 </p>
-                <p>
+                <p class="gs_reveal">
                     Peu de jeux incas sont parvenus jusqu'à nous, mais la plupart des chroniqueurs rapportent
                     l'existence d'un jeu de dé, la pichqa ("cinq" en quechua). Le dé pyramidal à cinq faces utilisé dans
                     ce jeu servait aussi comme instrument de divination.
                 </p>
             </div>
         </div>
-        <div id="religion">
-            <div class="full-img religion">
-                <img class="parallax-full" src="{{ asset ('build/images/religion.jpeg') }}" alt="religion header">
-            </div>
-            <div>
-                <h2>Religion</h2>
-                <p>La colonisation espagnole et l'évangélisation catholique ont rapidement fait décliner les religions
-                    des Incas. Si certaines formes subsistent aujourd'hui notamment sous forme d'animisme, la plupart
-                    des informations que l'on possède à ce propos sont issues de témoignages indirects, plus ou moins
-                    biaisés. On possède par ailleurs très peu d'informations sur le système religieux en-dehors des
-                    Andes, les populations ayant rapidement décliné avant même l'évangélisation.
-                </p>
-                <p>
-                    En plus de la volonté d'imposer une religion d'état, l'héritage des civilisations précédentes et une
-                    longue histoire d'échanges et d'influence permettent aux populations andines une certaine unité
-                    religieuse. Certaines divinités sont ainsi communes à différents peuples, mais portent des noms
-                    différents
-                </p>
-            </div>
 
-            <div class="flex culte">
-                <div class="flex flex-col justify-center">
-                    <h3>
-                        Le culte des ancètres:
-                    </h3>
-                    <p>
-                        Les ancêtres décédés occupent une place particulière dans les religions andines. Le fondateur
-                        d'un lignage est ainsi révéré, notamment pour avoir donné à son ayllu des terres. Ces fondateurs
-                        sont souvent semi-légendaires, ayant accompli des actes surnaturels et n'ayant pas de géniteurs
-                        humains. C'est ainsi le cas pour ceux de la tribu inca.
-                    </p>
-                    <p>
-                        Les corps des défunts sont conservés, non pas embaumés mais laissés à se dessécher au vent sec
-                        des montagnes. Des offrandes leur sont offertes et elles sont promenées lors des cérémonies
-                    </p>
-                </div>
-                <div class="ancetre  flex items-center">
-                    <img src="{{ asset ('build/images/culte-encetres.jpg') }}" alt="culte des ancètres">
-                </div>
-            </div>
-
-            <div>
-                <h3>Culte des Huacas:</h3>
-                <p>
-                    Si les Incas imposent le culte du Soleil, ils interdisent rarement l'exercice des croyances
-                    animistes préexistantes. Ainsi la plupart des peuples de l'empire, ainsi que les Incas eux-mêmes,
-                    accordent une grande importance à des fétiches (huacas). En Quechua, le terme huaca peut désigner
-                    tout ce qui sort de l'ordinaire ; par extension, il désigne tout ce qui est susceptible de faire
-                    l'objet d'un culte dans le contexte animiste. Les huacas peuvent ainsi être des objets naturels
-                    (comme une montagne ou un rocher) ou artificiels (comme un bâtiment) auxquels on prête une puissance
-                    surnaturelle. Il existe des huacas partout sur le territoire inca, et on estime à plus de cinq cents
-                    leur nombre à Cuzco et ses environs. Ils reçoivent de nombreuses offrandes et on cherche à
-                    communiquer avec eux pour obtenir de l'aide ou des conseils.
-                </p>
-            </div>
-
-            <div class="flex inti-p">
-                <div class="inti  flex items-center">
-                    <img src="{{ asset ('build/images/inti.png') }}" alt="Init">
-                </div>
-                <div class="flex flex-col justify-center">
-                    <h3>Culte du soleil et des astres:</h3>
-                    <p>
-                        Le fondement commun de la religion inca est une cosmovision basée sur les astres. L’identité du
-                        dieu principal, le soleil, prend 3 formes qui incarnent les 3 étapes de la course du soleil : le
-                        père Apu Inti ou seigneur soleil, le fils Churi Inti ou lumière du jour et le frère Inti Guauqui
-                        aussi au centre du culte de l’ancêtre fondateur de l’empire Inca. L’astronomie permet de
-                        distinguer Apu Inti et Churi Inti le long d’un axe cosmique qui leur attribue respectivement le
-                        solstice d’été et d’hiver. Le calendrier inca est lunaire et rythmé par la succession des
-                        solstices qui sont fêtés avec de grandes cérémonies ; Inti Raymi pour le solstice d’hiver qui
-                        rend un culte au soleil, et Capac Raymi pour celui d’été qui est plutôt dédié à l’Inca. Cette
-                        importance accordée aux astres qui régissent leur rythme de vie entraîne le développement d’une
-                        excellente connaissance de l’astronomie par les Incas. Des cartes astrales et des cadrans
-                        solaires témoignent de l’observation régulière et approfondie des trajectoires de la lune, du
-                        soleil et des étoiles.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex mb-16 inti-p ">
-                <div>
-                    <h3>
-                        Adoration d’autres divinité:
-                    </h3>
-                    <p>
-                        Parallèlement au culte du soleil, les Incas reconnaissaient et adoraient plusieurs autres
-                        divinités. Le plus important d'entre eux est Viracocha, un dieu agricole responsable notamment
-                        de l'aménagement du sol – les techniques d'irrigations revêtant une importance particulière pour
-                        les peuples andinsItier. Le lien entre Viracocha et Inti, le soleil, n'est pas clairement
-                        établi. La subordination de l'un à l'autre est floue et dans certaines légendes ils semblent
-                        même interchangeables. Après Viracocha, les Incas révéraient également l'Éclair, Inti Illapa le
-                        dieu du ciel, du tonnerre et de la foudre.
-                    </p>
-                    <p>
-                        L'Empire inca se composant d'une mosaïque de peuples qui n'ont pas forcément été détruits ou
-                        réduits en esclavage, certains cultes locaux ont pu perdurer sans pour autant que le peuple
-                        originaire de Cuzco ne les adopte. Le culte de Pachacamac en est un exemple : c'est un dieu de
-                        la côte centrale du Pérou dont les origines sont incertaines, mais dont le culte était en tout
-                        cas antérieur à celui de Viracocha. Le plus grand temple connu consacré à ce dieu s'appelle
-                        lui-même Pachacamac et remonte à l'époque de la culture Lima. Le culte serait probablement
-                        apparu entre l'an 300 et l'an 600. C'est cependant avec la culture Ishmay, civilisation locale
-                        qui se situait entre les fleuves Rimac et Lurin (1000-1450 ap. J.-C.), que le site de Pachacamac
-                        connaît son apogée.
-                    </p>
-                </div>
-                <div class="inti mr-9  flex items-center">
-                    <img src="{{ asset ('build/images/symbole4.png') }}" alt="Inti Illapa">
-                </div>
-            </div>
-
-            <div class="full-img pachacamac">
-                <img class="parallax-full" src="{{ asset ('build/images/pachacamac.jpg') }}" alt="Pachacamac">
-            </div>
-
-            <div>
-                <h3 class="text-center">
-                    Divination:
-                </h3>
-                <p>
-                    La divination tenait une place prépondérante dans la civilisation inca. Avant chaque action
-                    d'importance, on faisait appel à celle-ci et rien d'important ne pouvait être entrepris sans avoir
-                    auparavant consulté les auspices. La divination était utilisée aussi bien pour prédire le
-                    déroulement des batailles que pour punir un crime.
-                </p>
-                <p>
-                    l existait plusieurs méthodes de divination : on pouvait observer des araignées se déplacer ou
-                    analyser la disposition que les feuilles de coca prennent sur une assiette plate. Des prophéties
-                    pouvaient être aussi faites à partir de l'étude des entrailles d'animaux sacrifiés, et notamment les
-                    poumons de lamas.
-                </p>
-                <p>
-                    Les prêtres vivaient dans tous les temples et autres sanctuaires religieux importants. Ils
-                    remplissaient les fonctions de devins, sorciers, et médecins. Le titre de prêtre en chef à Cuzco
-                    était Villac Umu. Marié, il était souvent un proche parent de l'Inca et son autorité était en
-                    concurrence avec ce dernier.
-                </p>
-                <p>
-                    Les « femmes choisies », appelées aclla (« vestales » ou pour les Espagnols « vierges du Soleil »),
-                    forment une institution à part entière. Choisies dès leur plus jeune âge, elles suivent une
-                    éducation particulière. Elles peuvent ensuite être choisies par le Sapa Inca comme concubines, ou
-                    données à de hauts fonctionnaires, ou même sacrifiées. Elles préparent les aliments cérémoniels et
-                    confectionnent des vêtements portés par l'Inca et les prêtres.
-                </p>
-            </div>
-
-            <div class="flex sacrifice">
-                <div class="flex flex-col justify-center">
-                    <h6>
-                        Les sacirfices humains:
-                    </h6>
-                    <p>
-                        Les sacrifices et offrandes étaient quotidiens, dédiés aux dieux ou aux huacas.
-                        À chaque occasion importante, on offrait un sacrifice. L'animal le plus utilisé était un lama,
-                        le choix des animaux sacrifiés étant soumis à des règles précises sur la couleur de la fourrure.
-                    </p>
-                    <p>
-                        Les sacrifices humains ne se faisaient que lors de périodes de grands troubles, lorsque l'Inca
-                        était malade ou mort, par exemple, ou lors de catastrophes naturelles. L'objectif était alors
-                        d'apaiser le ou les dieux.
-                    </p>
-                    <p>
-                        Des analyses réalisées sur des momies particulièrement bien préservées ont permis d’apprendre
-                        que les enfants choisis pour être sacrifiés étaient exposés à de fortes doses de drogues et
-                        d’alcool avant leur mort.
-                    </p>
-                </div>
-                <div class="mr-13 momie flex items-center">
-                    <img src="{{ asset ('build/images/la-momie-fille-inca.jpg') }}" alt="momie du Llullaillaco">
-                </div>
-            </div>
-
-            <div>
-                <p>
-                    Les personnes, hommes, femmes ou enfants offerts en sacrifice devaient être en bonne condition
-                    physique et de parfaite constitution. Avant le sacrifice, le sacrifié buvait de la chicha (un
-                    alcool) pour atténuer la perception de ses sens. Dans de nombreux cas, il était ensuite enterré
-                    vivant. Pour l'honorer, les prêtres conduisaient des cérémonies qui l'accompagnaient tandis que son
-                    esprit quittait la terre. Parmi les jeunes filles choisies dans chaque province pour être femmes
-                    choisies, une partie était destinée à être sacrifiée.
-                </p>
-            </div>
-            <div class="flex ml-13 deces  ">
-                <div class="squelette  flex items-center justify-center">
-                    <img src="{{ asset ('build/images/incas-2000.jpg') }}" alt="squelette">
-                </div>
-                <div>
-                    <p>
-                        Les momies des Enfants du Llullaillaco (deux filles et un garçons âgés de 6 à 14 ans) ont été
-                        retrouvés en 1999 près du sommet du volcan (Cordillère des Andes). Cette découverte a permit aux
-                        chercheurs en 2007, d’ apprendre que le régime alimentaire de la jeune fille avait brusquement
-                        changé à peu près un an avant sa mort, ce qui marquerait ainsi la date à laquelle elle avait été
-                        choisie en tant que sacrifice. Des traces de drogues avaient déjà été décelées à ce moment-là.
-                        Selon les analyses, la consommation de feuilles de coca a visiblement augmenté six mois avant la
-                        mort de la demoiselle. Pendant les six mois restants, elle n’a ainsi pas arrêté d’en consommer.
-                        Les radiographies ont même révélé la présence de feuilles de coca dans la bouche de la défunte.
-                        La consommation d’alcool de la jeune fille, de la chicha (bière fermentée à partir de maïs) plus
-                        précisément, n’a quant à elle cessé d’augmenter jusqu’à son décès.
-                    </p>
-                    <h3>
-                        Décès:
-                    </h3>
-                    <p>
-                        Pour escorter l'Inca dans son voyage dans l'autre monde, deux de ses femmes, un serviteur et un
-                        guerrier étaient sacrifiés le jour de sa mort. Prétendument volontaires, ils étaient choisis dès
-                        leur plus jeune âge et enterrés vivants. Le corps de l'Inca, embaumé, était placé face au temple
-                        du soleil à Cuzco. Les obsèques duraient une année, pendant laquelle la population revêtait les
-                        insignes de l'Inca et chantait ses louanges, de façon continue le premier mois, puis tous les
-                        quinze jours, à chaque pleine et nouvelle lune
-                    </p>
-                </div>
-            </div>
-
-            <div class="full-img">
-                <img class="parallax-full" src="{{ asset ('build/images/temple-du-soleil.jpg') }}" alt="temple du soleil">
-            </div>
-            <div class="mb-16">
-                <h3 class="text-center">
-                    Temple du soleil:
-                </h3>
-                <p>
-                    En signe d'allégeance ou de véritable vénération, les peuples soumis par les Incas bâtissent dans
-                    leurs provinces de nombreux lieux de culte au soleil. Certains sont encore visibles de nos jours et
-                    témoignent de l'extension géographique du culte. Au Pérou se trouvent ainsi le temple de Coricancha
-                    à Cuzco, le temple Vilcashuaman et celui de Huascarán. En Bolivie, un temple du Soleil avait aussi
-                    été érigé sur l'Isla del Sol du lac Titicaca. À Caranqui, Équateur, se trouve un temple qui
-                    autrefois contenait des jarres pleines d'or et d'argent.
-                </p>
-            </div>
+        <div class="flex justify-center mb-16">
+            <ul class="pagination modal-3">
+                <li><a  href="{{ path("culture") }}" class="active">1</a></li>
+                <li> <a href="{{ path("culture-religion") }}"> 2 </a></li>
+                <li>  <a href="{{ path("culture-other") }}"> 3 </a></li>
+                <li><a href="{{ path("culture-religion") }}" class="next">&raquo;</a></li>
+            </ul>
         </div>
-        <div id="architecture">
-            <div class="flex mur-p">
-                <div class="mur  flex items-center">
-                    <img src="{{ asset ('build/images/peru-mur.jpg') }}" alt="mur">
-                </div>
-                <div class="flex flex-col justify-center">
-                    <h2 class="title-archi">
-                        Arcitectures et sculture:
-                    </h2>
-                    <p>
-                        Les Incas étaient d'excellents architectes. Leurs constructions sont imposantes et ingénieuses,
-                        souvent orientées à des fins utilitaires. Le nombre de bâtiments et autres constructions
-                        réalisés est vraiment élevé. La forme trapézoïdale souvent donnée aux portes et fenêtres des
-                        temples permet à l'édifice de résister beaucoup mieux aux tremblements de terre, très fréquents
-                        dans ces régions. En s'installant à Cuzco, les espagnols ont d'ailleurs repris comme fondation
-                        de leurs bâtiments les restes des temples incas. Lors des nombreux séismes, les constructions ou
-                        fondations incas tenaient généralement mieux que les constructions espagnoles.
-                    </p>
-                </div>
-            </div>
 
-            <div class="flex fenetre-p">
-                <div class="flex items-center txt">
-                    <p>
-                        Les Incas utilisaient divers styles architecturaux, mais le plus connu est sans conteste celui
-                        utilisé par exemple pour le temple du Soleil de Cuzco ainsi que beaucoup d'autres bâtiments
-                        d'importance : le matériau principal était la pierre mais ils n'utilisaient pas de mortier pour
-                        les joindre entre elles. De grandes pierres polygonales étaient alors utilisées, s'emboîtant
-                        parfaitement les unes dans les autres sans laisser le moindre espace vide. On peut voir encore
-                        de nos jours de nombreux exemples de cet art architectural, parmi lesquels Sacsayhuamán la
-                        forteresse de Cuzco, ou encore les impressionnantes ruines d'Ollantaytambo.
-                    </p>
-                </div>
-                <div class="fenetre  flex items-center">
-                    <img src="{{ asset ('build/images/2372.jpg') }}" alt="architecture">
-                </div>
-            </div>
-        </div>
+
+
         <div id="videos">
-            <h2>Documentaires Vidéo:</h2>
+            <h2 class="gs_reveal">Documentaires Vidéo:</h2>
             <div>
 
             </div>
         </div>
     </div>
 
-
+</div>
 
 
 {% endblock %}

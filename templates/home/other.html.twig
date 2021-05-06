@@ -1,0 +1,200 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Culture-autre{% endblock %}
+
+{% block body %}
+
+    <img class="cult-header" src="{{ asset('build/images/moray-maras.jpg') }}" alt="moray-maras">
+
+<div class="contenaire">
+    <div class="cult-content">
+
+        <div id="btn-summary">
+
+            <input type="checkbox" />
+
+            <span class="vertical"></span>
+            <span class="horizontal"></span>
+
+            <ul id="summary">
+                <a href="{{ path('culture') }}#social"><li>Classes sociales</li></a>
+                <a href="{{ path('culture-other') }}#agriculture"><li>Agriculture</li></a>
+                <a href="{{ path('culture') }}#life"><li>Mode de vie</li></a>
+                <a href="{{ path('culture-religion') }}#religion"><li>Religion</li></a>
+                <a href="{{ path('culture-other') }}#architecture"><li>Architectures et scultures</li></a>
+                <a href="#videos"><li>Vidéos</li></a>
+            </ul>
+        </div>
+        <div id="agriculture">
+            <div>
+                <h2 class="gs_reveal">
+                    Agriculture:
+                </h2>
+                <p class="intro mt-10 gs_reveal mb-16">
+                    Peuple du soleil, les Incas ont aussi été précurseurs de nombreuses techniques agricoles.
+                </p>
+                <p class="gs_reveal mb-16">
+                    Ils contrôlaient un vaste empire qui comprenait quatre zones climatiques et, par conséquent, leur
+                    production agricole est diverse. Les gens des Andes antiques étaient en grande partie végétarien,
+                    ajoutant parfois à leur régime avec camelid viandes et fruits de mer si ils pouvaient l'obtenir.
+                    L'état Inca mis au point un appareil agricole énorme, où cultures et troupeaux ont été
+                    réquisitionnés de peuples conquis et les gens eux-mêmes ont été régulièrement réquisitionnés pour
+                    travailler dans des fermes d'Etat. Plus positivement, un vaste réseau d'installations d'entreposage
+                    a été développé pour s'assurer contre la sécheresse et des catastrophes et des denrées alimentaires
+                    ont été souvent donnés comme cadeaux par les dirigeants qui cherchent à se faire populaire.
+                </p>
+                <h3 class="gs_reveal">
+                    Organisation et méthodes:
+                </h3>
+                <p class="gs_reveal mb-16">
+                    Un niveau microéconomique chaque unité familiale a produit sa propre nourriture. Unités familiales
+                    faisaient partie d'un plus large groupe parental ou l' ayllu qui collectivement la propriété des
+                    terres agricoles. Idéalement, un ayllu serait possèdent au moins quelques terres dans les highlands
+                    et les basses terres plus tempérées afin qu'une diversité de produits alimentaires puisse être
+                    cultivée. Par exemple, les hautes terres pourraient offrir de bons pâturages et permettre la
+                    production de pommes de terre et maïs, tandis que coca ne pouvait être cultivée à des altitudes
+                    inférieures. Une superficie de terres pour la culture du maïs (peut-être environ 1,5 acre) appelée
+                    un tupu a donné aux jeunes mariés leurs ayllu afin qu'ils puissent être autonomes. Elle était accrue
+                    d'une quantité égale, ou moindre de moitié, à chaque naissance de fils ou de fille. Le tupu était
+                    concédé à titre éminemment précaire, Ia mort où le mariage d'un enfant entraînait une suppression
+                    correspondant de terrain. Si le père de famille venait à disparaître, la veuve conservait pour sa
+                    subsistance et celle de ses enfants la surface accordée et un devoir strict de solidarité obligeait
+                    les gens du groupement à lui venir en aide. Des châtiments sévères attendaient le paresseux, le
+                    gaspilleur du précieux liquide, l'eau, car il compromettait à la fois sa récolte et celle des
+                    voisins qui étaient tributaires de sa propre irrigation.
+                    Si le propriétaire d'un terrain est mort sans héritier, la terre a été retournée à l' ayllu pour
+                    redistribution future.
+                </p>
+            </div>
+
+            <div class="flex items-center p-terraces justify-center mb-16 mt-16">
+                <div class="p-l">
+                    <p class="gs_reveal">
+                        Les terres ont été travaillées en utilisant des outils simples comme une houe, brise Motte et
+                        pied plough (le chakitaqlla), qui se composait d'un bois ou bronze pointus, pôle qui a été
+                        poussé dans le sol en plaçant son pied sur une barre horizontale. Les Couteaux ont été
+                        généralement faites à l'aide de pavés aiguisé. L'agriculture était une pratique communautaire,
+                        et agriculteurs travaillaient en petites équipes de sept ou huit, chantant souvent alors qu'ils
+                        travaillaient avec les hommes en train de sarcler et femmes suit derrière, briser les mottes et
+                        en semant des graines. Pendant ce temps, enfants et jeunes adultes étaient responsables de la
+                        tendant au troupeau familial de camélidés.
+
+                    </p>
+                </div>
+                <div class="terraces  flex items-center">
+                    <img src="{{ asset('build/images/anciennes-ruines-terrasses-agricoles-incas.jpg') }}"
+                         alt="terrasse-agricoles">
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <p class="gs_reveal">
+                    Les cultures cultivées à travers l'Empire Inca inclus maïs, coca, haricots, céréales, pommes de
+                    terre, patates douces, ulluco, oca, mashwa, poivre, tomates, arachides, noix de cajou, courge,
+                    concombre, quinoa, Gourde, coton, talwi, caroube, chirimoya, lúcuma, guayabo et avocat. Le bétail
+                    était principalement des troupeaux de lamas et des alpagas. Ces animaux ont été vital pour beaucoup
+                    d'aspects de la vie andine car ils ont fourni la laine, viande, cuir, meubles richesse, transports
+                    (en particulier pour l'armée), et ils ont été souvent sacrifiés dans les cérémonies religieuses.
+                    Certaines des plus grandes publiques troupeaux pourrait avoir des dizaines de milliers d'animaux, et
+                    tous les troupeaux ont été méticuleusement répertoriées dans un recensement d'État mené de novembre
+                    de chaque année.
+                </p>
+                <p class="gs_reveal">
+                    Les Incas étaient agriculteurs ambitieux: ils ont transformé le paysage avec terrasses, de canaux,
+                    avec des réseaux d'irrigation . Afin d'optimiser la production agricole, ils ont transformé le
+                    paysage avec réseaux terrassement, canaux et irrigation, tandis que les zones humides ont été
+                    souvent drainées pour les rendre appropriés à l'agriculture. En outre, les Incas connaissaient
+                    parfaitement les valeurs de la rotation régulière des cultures, et elles aussi fertilisé la terre
+                    avec la bouse de Lama séché, guano ou têtes de poisson si ces matières étaient disponibles. Malgré
+                    cela, le climat souvent rude d'andine pourrait apporter des inondations, sécheresses et tempêtes
+                    qui, ainsi que de la maladie, signifiait que les mauvaises récoltes annuelles n'étaient pas rares.
+                    Dans ce cas le talent de l'Inca pour la conservation des aliments est entré en sa propre.
+                </p>
+            </div>
+
+            <div class="full-img qollqa mb-16">
+                <img class="parallax-full" src="{{ asset('build/images/qollqa.jpg') }}" alt="qollqa">
+            </div>
+            <div class="mb-16">
+                <h3 class="text-center gs_reveal">
+                    Conservation des aliments:
+                </h3>
+                <p class="gs_reveal">
+                    Les denrées alimentaires (et autres marchandises) étaient stockés dans des entrepôts (qollqa) qui
+                    ont été construits dans les dizaines de milliers dans l'empire, généralement disposées en rangées et
+                    à proximité de centres de population, grands domaines et stations de bord de la route. Représentants
+                    de l'état conservé des comptes minutieuse de leurs stocks en utilisant le quipu, un dispositif
+                    d'enregistrement des cordes et noeuds. Qollqa étaient des pièces simples bâtiments en pierre, soit
+                    circulaires ou rectangulaires, qui ont été construits d'une manière remarquablement uniforme. Placé
+                    sur les coteaux de profiter de la brise fraîche, qollqa ont été conçus pour maximiser la durée de
+                    conservation des marchandises périssables avec lequel ils ont été remplis. Ils avaient des canaux de
+                    drainage, sol de gravier et ventilation dans le plancher et le toit afin de garder l'intérieur aussi
+                    cool et sèches que possible afin que les marchandises ordinaires pourraient être conservés pendant
+                    jusqu'à deux ans et les aliments lyophilisés jusqu'à quatre ans. Les archéologues ont constaté que
+                    le maïs, pommes de terre et quinoa étaient plus courantes denrées stockées dans qollqa. Maïs et coca
+                    de ces magasins ont été fréquemment donnés aux masses par recherche de popularité des dirigeants et
+                    en période de mauvaises récoltes.
+                </p>
+            </div>
+        </div>
+
+
+        <div id="architecture">
+            <div class="flex mur-p mb-16">
+                <div class="mur  flex items-center">
+                    <img src="{{ asset ('build/images/peru-mur.jpg') }}" alt="mur">
+                </div>
+                <div class="flex flex-col justify-center p-r">
+                    <h2 class="title-archi gs_reveal">
+                        Arcitectures et sculture:
+                    </h2>
+                    <p class="gs_reveal">
+                        Les Incas étaient d'excellents architectes. Leurs constructions sont imposantes et ingénieuses,
+                        souvent orientées à des fins utilitaires. Le nombre de bâtiments et autres constructions
+                        réalisés est vraiment élevé. La forme trapézoïdale souvent donnée aux portes et fenêtres des
+                        temples permet à l'édifice de résister beaucoup mieux aux tremblements de terre, très fréquents
+                        dans ces régions. En s'installant à Cuzco, les espagnols ont d'ailleurs repris comme fondation
+                        de leurs bâtiments les restes des temples incas. Lors des nombreux séismes, les constructions ou
+                        fondations incas tenaient généralement mieux que les constructions espagnoles.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex fenetre-p mb-16">
+                <div class="flex items-center txt p-l">
+                    <p class="gs_reveal">
+                        Les Incas utilisaient divers styles architecturaux, mais le plus connu est sans conteste celui
+                        utilisé par exemple pour le temple du Soleil de Cuzco ainsi que beaucoup d'autres bâtiments
+                        d'importance : le matériau principal était la pierre mais ils n'utilisaient pas de mortier pour
+                        les joindre entre elles. De grandes pierres polygonales étaient alors utilisées, s'emboîtant
+                        parfaitement les unes dans les autres sans laisser le moindre espace vide. On peut voir encore
+                        de nos jours de nombreux exemples de cet art architectural, parmi lesquels Sacsayhuamán la
+                        forteresse de Cuzco, ou encore les impressionnantes ruines d'Ollantaytambo.
+                    </p>
+                </div>
+                <div class="fenetre  flex items-center">
+                    <img src="{{ asset ('build/images/2372.jpg') }}" alt="architecture">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center mb-16">
+            <ul class="pagination modal-3">
+                <li><a href="{{ path("culture-religion") }}" class="prev">&laquo</a></li>
+                <li><a  href="{{ path("culture") }}">1</a></li>
+                <li> <a href="{{ path("culture-religion") }}"> 2 </a></li>
+                <li>  <a href="{{ path("culture-other") }}"  class="active" > 3 </a></li>
+
+            </ul>
+        </div>
+
+        <div id="videos">
+            <h2 class="gs_reveal">Documentaires Vidéo:</h2>
+            <div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
