@@ -3,8 +3,10 @@
 {% block title %}Culture-religion{% endblock %}
 
 {% block body %}
+<div  class=" cult-header ">
+    <img src="{{ asset ('build/images/religion.jpeg') }}" alt="religion header">
 
-    <img class=" cult-header " src="{{ asset ('build/images/religion.jpeg') }}" alt="religion header">
+</div>
 
 
     <div class="contenaire">
@@ -30,25 +32,28 @@
             <div id="religion">
                 <div class="mb-16">
                     <h2 class="gs_reveal">Religion</h2>
-                    <p class="gs_reveal">La colonisation espagnole et l'évangélisation catholique ont rapidement fait
-                        décliner les religions
-                        des Incas. Si certaines formes subsistent aujourd'hui notamment sous forme d'animisme, la
-                        plupart
-                        des informations que l'on possède à ce propos sont issues de témoignages indirects, plus ou
-                        moins
-                        biaisés. On possède par ailleurs très peu d'informations sur le système religieux en-dehors des
-                        Andes, les populations ayant rapidement décliné avant même l'évangélisation.
-                    </p>
-                    <p class="gs_reveal">
-                        En plus de la volonté d'imposer une religion d'état, l'héritage des civilisations précédentes et
-                        une
-                        longue histoire d'échanges et d'influence permettent aux populations andines une certaine unité
-                        religieuse. Certaines divinités sont ainsi communes à différents peuples, mais portent des noms
-                        différents
-                    </p>
+                    <div class="gs_reveal marge">
+                        <p class="italic">La colonisation espagnole et l'évangélisation catholique ont rapidement fait
+                            décliner les religions
+                            des Incas. Si certaines formes subsistent aujourd'hui notamment sous forme d'animisme, la
+                            plupart
+                            des informations que l'on possède à ce propos sont issues de témoignages indirects, plus ou
+                            moins
+                            biaisés. On possède par ailleurs très peu d'informations sur le système religieux en-dehors des
+                            Andes, les populations ayant rapidement décliné avant même l'évangélisation.
+                        </p>
+                        <p class="italic">
+                            En plus de la volonté d'imposer une religion d'état, l'héritage des civilisations précédentes et
+                            une
+                            longue histoire d'échanges et d'influence permettent aux populations andines une certaine unité
+                            religieuse. Certaines divinités sont ainsi communes à différents peuples, mais portent des noms
+                            différents
+                        </p>
+                    </div>
+
                 </div>
 
-                <div class="flex culte mb-16">
+                <div class="flex culte marge">
                     <div class="flex flex-col justify-center p-l">
                         <h3 class="gs_reveal">
                             Le culte des ancètres:
@@ -96,7 +101,7 @@
                     <div class="inti  flex items-center">
                         <img src="{{ asset ('build/images/inti.png') }}" alt="Init">
                     </div>
-                    <div class="flex flex-col justify-center">
+                    <div class="flex flex-col justify-center marge">
                         <h3 class="gs_reveal">Culte du soleil et des astres:</h3>
                         <p class="gs_reveal">
                             Le fondement commun de la religion inca est une cosmovision basée sur les astres. L’identité
@@ -123,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="flex mb-16 inti-p mt-16 ">
+                <div class="flex marge inti-p  ">
                     <div class="p-l">
                         <h3 class="gs_reveal">
                             Adoration d’autres divinité:
@@ -161,15 +166,15 @@
                     </div>
                 </div>
 
-                <div class="full-img pachacamac mb-16">
+                <div class="full-img pachacamac marge">
                     <img class="parallax-full" src="{{ asset ('build/images/pachacamac.jpg') }}" alt="Pachacamac">
                 </div>
 
-                <div class="mb-16">
+                <div class="marge">
                     <h3 class="text-centergs_reveal">
                         Divination:
                     </h3>
-                    <p class="gs_reveal">
+                    <p class="gs_reveal italic">
                         La divination tenait une place prépondérante dans la civilisation inca. Avant chaque action
                         d'importance, on faisait appel à celle-ci et rien d'important ne pouvait être entrepris sans
                         avoir
@@ -201,7 +206,7 @@
                     </p>
                 </div>
 
-                <div class="flex sacrifice mb-16">
+                <div class="flex sacrifice marge">
                     <div class="flex flex-col justify-center p-l">
                         <h6 class="gs_reveal">
                             Les sacirfices humains:
@@ -243,7 +248,7 @@
                         choisies, une partie était destinée à être sacrifiée.
                     </p>
                 </div>
-                <div class="flex deces mt-16 mb-16">
+                <div class="flex deces marge">
                     <div class="squelette  flex items-center justify-center">
                         <img src="{{ asset ('build/images/incas-2000.jpg') }}" alt="squelette">
                     </div>
@@ -292,7 +297,7 @@
                     <img class="parallax-full" src="{{ asset ('build/images/temple-du-soleil.jpg') }}"
                          alt="temple du soleil">
                 </div>
-                <div class="mb-16">
+                <div class="marge">
                     <h3 class="text-center gs_reveal">
                         Temple du soleil:
                     </h3>
@@ -321,13 +326,13 @@
                     <li><a href="{{ path("culture-other") }}" class="next">&raquo;</a></li>
                 </ul>
             </div>
+        </div>
+    </div>
 
-            <div id="videos">
-                <h2 class="gs_reveal">Documentaires Vidéo:</h2>
-                <div>
+    <div id="videos">
+        <h2 class="gs_reveal">Documentaires Vidéo:</h2>
+        <div>
 
-                </div>
-            </div>
         </div>
     </div>
 

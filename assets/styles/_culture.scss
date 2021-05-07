@@ -18,6 +18,7 @@
 #videos {
   background-color: rgba(0, 0, 0, 0.86);
   height: 500px;
+  text-align: center;
 }
 
 .cult-content {
@@ -164,8 +165,12 @@
   }
 
   #religion {
+    h2 {
+      padding-bottom: 0;
+    }
+
     .ancetre img {
-      height: 400px;
+      height: 300px;
     }
 
     .inti img {
@@ -295,9 +300,18 @@
     }
 
     #religion {
+
+      .deces .p-r{
+        margin: 3em 0;
+
+      }
       .culte {
         flex-direction: column;
         align-items: center;
+
+        .p-l {
+          margin-right: 0;
+        }
 
         .ancetre {
           order: 1;
@@ -308,6 +322,10 @@
       .sacrifice {
         flex-direction: column;
         align-items: center;
+
+        .p-l {
+          margin-right: 0;
+        }
 
         .momie {
           margin-right: 0;
@@ -485,6 +503,10 @@
         flex-direction: column;
         align-items: center;
 
+        .p-l {
+          margin-right: 0;
+        }
+
         .inti {
           margin-right: 0;
         }
@@ -610,8 +632,14 @@
       }
     }
 
-    #religion .religion img {
+    #religion {
+      .religion img {
+
       height: auto;
+    }
+      div.flex.marge.inti-p {
+        margin: 1em 0;
+      }
     }
   }
   #videos h2 {
