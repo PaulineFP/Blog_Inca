@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ScrollTrigger.create({
             trigger: elem,
             onEnter: function() { animateFrom(elem) },
-            onEnterBack: function() { animateFrom(elem, -1) },
+             onEnterBack: function() { animateFrom(elem, -1) },
             onLeave: function() { hide(elem) } // assure que l'élément est masqué lors du défilement dans la vue
         });
     });
