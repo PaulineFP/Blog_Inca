@@ -1,0 +1,97 @@
+<div id="videos">
+
+    <h2 class="gs_reveal">Documentaires Vidéo:</h2>
+
+    <div class="app">
+
+        <div class="cardList">
+            <button class="cardList__btn btn btn--left">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                </div>
+            </button>
+
+            {# Images 1er plant#}
+            <div class="cards__wrapper">
+                <div class="card current--card">
+                    <div class="card__image">
+                        <img src="{{ asset('build/images/sorciervideo.jpg') }}" alt="image de la video" />
+                    </div>
+                </div>
+
+                <div class="card next--card">
+                    <div class="card__image">
+                        <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="image de la video" />
+                    </div>
+                </div>
+
+                <div class="card previous--card">
+                    <div class="card__image">
+                        <img src="{{ asset('build/images/momie-v.jpg') }}" alt="image de la video" />
+                    </div>
+                </div>
+            </div>
+
+            <button class="cardList__btn btn btn--right">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+
+        <div class="infoList">
+            <div class="info__wrapper">
+                <div class="info current--info">
+                    <h1 class="text name">L'empire du Soleil</h1>
+                    <h4 class="text location">C'est Pas Sorcier</h4>
+                    <a href="https://www.youtube.com/watch?v=2B24B6cMKt8" class="text description" >Voir la vidéo</a>
+{#                    <p >The mountains are calling</p>#}
+                </div>
+
+                <div class="info next--info">
+                    <h1 class="text name">L'histoire de l'Empire Inca</h1>
+                    <h4 class="text location">Documentaire Science Grand Format</h4>
+                    <a href="https://www.youtube.com/watch?v=MP4l-irzmtM" class="text description doc-h " >Voir la vidéo</a>
+
+                </div>
+
+                <div class="info previous--info">
+                    <h1 class="text name">Le mystère des momies Incas</h1>
+                    <h4 class="text location">National Geographic</h4>
+                    <a href="https://www.youtube.com/watch?v=QTRL5kQbNsE" class="text description doc-m" >Voir la vidéo</a>
+                </div>
+            </div>
+        </div>
+
+        {#Images 2e plant#}
+        <div class="app__bg">
+            <div class="app__bg__image current--image">
+                <img src="{{ asset('build/images/sorciervideo.jpg') }}" alt="image de la video" />
+            </div>
+            <div class="app__bg__image next--image">
+                <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="image de la video" />
+            </div>
+            <div class="app__bg__image previous--image">
+                <img src="src="{{ asset('build/images/momie-v.jpg') }}" alt="image de la video" />
+            </div>
+        </div>
+    </div>
+
+    <svg class="icons" style="display: none;">
+        <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='328 112 184 256 328 400'
+                      style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+        <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='184 112 328 256 184 400'
+                      style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+    </svg>
+
+
+
+</div>
