@@ -15,6 +15,7 @@ const DisplayText = line => {
 
     setInterval(() => {
         if (charPosition < line.length) {
+            output.innerHTML += line.charAt(charPosition)
             charPosition++
         }
     }, waitForMilliseconds)
